@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>天然甘 Natural Sweet</title>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="shortcut icon" href="./images/shortIcon.png">
+
+
+<!-- Links------------------- -->
+<!-- GoogleFont cdn---------------------------------- -->
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Indie+Flower|Acme|Amatic+SC|Kanit|Maven+Pro|Prompt&display=swap" rel="stylesheet">
+<!-- Not sure---------------------------------- -->
+<link rel="shortcut icon" href="./images/shortIcon.png">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<!-- Index css all---------------------------------- -->
+<link rel="stylesheet" href="./css/page/index/main.css">
+
+
+
+<!-- Scripts------------------- -->
+<!-- wow cdn -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    window.addEventListener('load', function () { 
+    new WOW().init();
+    });
+</script>
+<!-- Fontawesome ---------------------------------- -->
+<script defer src="./js/all.js"></script>
+<!-- banner js ---------------------------------- -->
+<script defer src="./js/index_banner.js"></script>
+<!-- product js ---------------------------------- -->
+<script defer src="./js/index_peishan.js"></script>
+<!-- customizs js ---------------------------------- -->
+<script defer src="./js/index_qna.js"></script>
+<!-- product js ---------------------------------- -->
+<script defer src="./js/index_forum.js"></script>
+<!-- product js ---------------------------------- -->
+<script defer src="./js/index_customize.js"></script>
+<!-- aboutus js ---------------------------------- -->
+<script defer src="./js/all.js"></script>
+<!-- vue cdn---------------------------------- -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+
+<!-- jeff js ---------------------------------- -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script defer src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
+<script defer src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js'></script>
+<script defer src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js'></script>
+<script defer src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js'></script>
+<script defer src="./js/Jeff_index.js"></script>
+
+
+<!-- jQuery ---------------------------------- -->
+<script src="./js/jquery-3.4.1.js"></script>
+<script src="./js/jquery-ui.js"></script>
+</head>
+
+<body>
+    <!-- 首頁 index.html---------------------------------------------------- -->
+    <!-- header------------------------------------ -->
+    <script src="./js/hamburger.js"></script>
+<script src="./js/login_common.js"></script>
+<header>
+    <nav class="header__container">
+        <span class="logo">
+            <a href="home.html"><img src="./images/Logo.svg"></a>
+        </span>
+        <div class="navList">
+            <a class="navItem @@focus01" href="about.html">果甘物語 <i class="fas fa-seedling"></i></a>
+            <a class="navItem @@focus02" href="prod_product.html">特色果甘 <i class="fas fa-apple-alt"></i></a>
+            <a class="navItem @@focus03" href="box.html">客製禮盒 <i class="fas fa-gift"></i></a>
+            <a class="navItem @@focus04" href="cusfruits.html">客製果甘 <i class="fas fa-lemon"></i></a>
+            <!-- <a class="navItem @@focus05" href="#">折扣遊戲 <i class="fas fa-carrot"></i></a> -->
+            <a class="navItem @@focus06" href="forum.php">果甘話區 <i class="fas fa-leaf"></i></a>
+        </div>
+        <div class="navList_2">
+            <input id="memNo" type="hidden" value="">
+            <a id="shopCart" class="navItem_2" href="prod_shopping.html">
+                <i class="fas fa-shopping-cart"></i><span id="a_count"></span></a>
+            <a id="memNickname" href="member.html">&nbsp;</a>
+            <!-- 會員暱稱 -->
+            <a id="spanLogin" class="navItem_2">登入</a>
+        </div>
+    </nav>
+    <nav class="rwdHeader">
+        <div class="rwdHeaderWrap">
+            <a href="home.html">
+                <img id="topLogo2" src="./images/Logo.svg">
+            </a>
+            <button class="hamburger hamburger--elastic" id="hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="rwdHamburgerMenu">
+        <nav>
+            <ul>
+                <a href="member.html">
+                    <li id="mobilememNickname">&nbsp;</li>
+                </a>
+                <a id="mobileloginLink">
+                    <li id="mobilespanLogin">登入 <i class="fas fa-user-circle"></i></li>
+                </a>
+                <a id="shopCart" href="prod_shopping.html">
+                    
+                    <li>購物車<i class="fas fa-shopping-cart"></i><span id="b_count"></span></li>
+                </a>
+                <a href="about.html">
+                    <li>果甘物語 <i class="fas fa-seedling"></i></li>
+                </a>
+                <a href="prod_product.html">
+                    <li>特色果甘 <i class="fas fa-apple-alt"></i></li>
+                </a>
+                <a href="box.html">
+                    <li>客製禮盒 <i class="fas fa-gift"></i></li>
+                </a>
+                <a href="cusfruits.html">
+                    <li>客製果甘 <i class="fas fa-lemon"></i></li>
+                </a>
+                <!-- <a href="#">
+                    <li>折扣遊戲 <i class="fas fa-carrot"></i></li>
+                </a> -->
+                <a href="forum.php">
+                    <li>果甘話區 <i class="fas fa-leaf"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- banner------------------------------------ -->
+    <section class="index_banner">
+        <h1 class="indexBanner wow bounce">
+    <span class="text-wrapper">
+        <span class="letters wow jackInTheBox"> - Natural Sweet - </span>
+    </span>
+</h1>
+<br>
+<h1>品嘗果甘，品味天然的美好</h1>
+<!-- <h3>堅持來自產地新鮮水果製成果甘</h3> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    </section>
+
+
+    <!-- 內容------------------------------------ -->
+    <div class="wrap">
+
+        <!-- 關於我們------------------------------------ -->
+        <section class="index_about">
+            <!-- <link rel="stylesheet" href="./css/page/index/index_jeff.css"> -->
+<div class="contain">
+    <div class="cloud_section">
+        <img class="cloud1" src="./images/index/index_jeff/img_1/couldSun.svg" alt="" width="20%">
+        <img class="cloud2" src="./images/index/index_jeff/img_1/cloud2.svg" alt="" width="20%">
+    </div>
+
+
+    <section id="indexSection1">
+
+
+        <div class="landSection">
+            <div class="parallaxContainer">
+
+                <ul id="scene">
+                    <li class="layer" data-depth="1">
+                        <img src="./images/index/index_jeff/img_1/fruit01.svg" class="F1" width="150px" />
+                    </li>
+
+                    <li class="layer" data-depth="0.9">
+                        <img src="./images/index/index_jeff/img_1/fruit06.svg" class="F6" width="100px" />
+                    </li>
+
+                    <li class="layer" data-depth="0.7">
+                        <img src="./images/index/index_jeff/img_1/fruit05.svg" class="F5" width="90px" />
+                    </li>
+
+                    <li class="layer" data-depth="0.6">
+                        <img src="./images/index/index_jeff/img_1/fruit03.svg" class="F3" width="100px" />
+                    </li>
+
+                    <li class="layer" data-depth="0.8">
+                        <img src="./images/index/index_jeff/img_1/fruit02.svg" class="F2" width="100px" />
+                    </li>
+
+                    <li class="layer" data-depth="0.5">
+                        <img src="./images/index/index_jeff/img_1/fruit04.svg" class="F4" width="90px" />
+                    </li>
+
+                </ul>
+
+            </div>
+            <img class="land" src="./images/index/index_jeff/fruitsandLand.svg" alt="" width="65%">
+            <a class="about_btn wow jackInTheBox" href="about.html">果甘物語→</a>
+        </div>
+
+
+        <img class="happy" src="./images/index/index_jeff/happy_nobg.png" alt="" width="200px">
+
+    </section>
+
+</div>
+
+
+        </section>
+
+
+        <!-- 特色果甘------------------------------------ -->
+        <section class="index_prod">
+            <!-- 共用title -->
+    <h2 class="prod_title wow bounce">
+        <img src="./images/index/leaf6.svg" class="leafLeft">
+        <img src="./images/index/leaf5.svg" class="leafRight">
+        特色果甘排行榜
+    </h2>
+
+    <!-- 內容開始 -->
+
+    <h3>本週熱門果甘排行</h3>
+    <div class="contain">
+
+        <table class="prod_leaderboard">
+            <!-- 第一排tr -->
+            <tr>
+                <td class="prod_colorful_balloon_left">
+                    <img src="./images/index/index_peishan/grey_balloon.svg">
+                    <img src="./images/index/index_peishan/blue_balloon.svg">
+                </td>
+
+                <td class="prod_leaderboard lower wow fadeInUp">
+                    <img src="./images/index/index_addPics/white_balloon2.svg">
+                    
+                    <div class="prod_introduce">
+                        <div class="prod_leaderboard_img">
+                            <img src="./images/index/index_addPics/index_mango.JPG">
+                        </div>
+                        <div class="prod_lntro_content">
+                            <p>芒果甘</p>
+                            <span>3.9</span>
+                            <img src="./images/index/index_peishan/icon/three_stars.svg">
+                        </div>
+                    </div>
+                </td>
+
+                <td class="prod_leaderboard wow fadeInUp delay-1s">
+                    <img src="./images/index/index_addPics/white_balloon2.svg">
+
+                    <div class="prod_introduce">
+                        <div class="prod_leaderboard_img">
+                            <img src="./images/index/index_addPics/index_pineapple.JPG">
+                        </div>
+                        <div class="prod_lntro_content">
+                            <p>鳳梨甘</p>
+                            <span>4.2</span>
+                            <img src="./images/index/index_peishan/icon/three_stars.svg" class="prod_stars">
+                        </div>
+                    </div>
+
+                    <center class="prod_center wow jackInTheBox">
+                        <br>
+                        <!-- <button class="prod_btn" onclick="location.href='./product.html'">更多果甘</button> -->
+                        <a href="prod_product.html"><div class="prod_btn">查看更多果甘→</div></a>
+                        <!-- <a href="./prod_product.html"><div class="prod_btn">查看更多果甘→</div></a> -->
+                    </center>
+
+                </td>
+
+                <td class="prod_leaderboard lower wow fadeInUp delay-2s">
+                    <img src="./images/index/index_addPics/white_balloon2.svg">
+
+                    <div class="prod_introduce">
+                        <div class="prod_leaderboard_img">
+                            <img src="./images/index/index_addPics/starfruit.JPG" class="starfruit">
+                        </div>
+                        <div class="prod_lntro_content">
+                            <p>楊桃甘</p>
+                            <span>3.9</span>
+                            <img src="./images/index/index_peishan/icon/three_stars.svg" class="prod_stars">
+                        </div>
+                    </div>
+
+                </td>
+                <td class="prod_colorful_balloon_right">
+                    <img src="./images/index/index_peishan/grey_balloon.svg"
+                        class="higher">
+                    <img src="./images/index/index_peishan/blue_balloon.svg">
+                </td>
+            </tr>
+        </table>
+
+
+
+
+<!-- -----------手機版--------------------------------------------------------- -->
+<div class="prod_phone_wrap">
+<div class="card wow slideInLeft">
+    <div class="products wow bounce">
+      <div class="product active" product-id="1" product-color="#D18B49">
+        <div class="thumbnail"><img src="./images/index/index_addPics/index_mango.JPG" class="prod_pics"/></div>
+            <h1 class="title">芒果甘</h1>
+            <p class="description">
+            <span>3.9</span>
+            <br>
+            <img src="./images/index/index_peishan/icon/three_stars.svg" class="prod_stars">
+            </p>
+      </div>
+      <div class="product" product-id="2" product-color="#ffffff">
+        <div class="thumbnail"><img src="./images/index/index_addPics/index_pineapple.JPG" class="prod_pics"/></div>
+            <h1 class="title">鳳梨甘</h1>
+            <p class="description">
+                <span>4.2</span>
+                <br>
+                <img src="./images/index/index_peishan/icon/three_stars.svg" class="prod_stars">
+            </p>
+      </div>
+      <div class="product" product-id="3" product-color="#c57171">
+        <div class="thumbnail"><img src="./images/index/index_addPics/starfruit.JPG" class="prod_pics"/></div>
+            <h1 class="title">楊桃甘</h1>
+            <p class="description">
+                <span>3.9</span>
+                <br>
+                <img src="./images/index/index_peishan/icon/three_stars.svg" class="prod_stars">    
+            </p>
+      </div>
+    </div>
+    <div class="footer"><a class="btn" id="prev" href="#" ripple="" ripple-color="#666666">&lt;&nbsp;PREV</a><a class="btn" id="next" href="#" ripple="" ripple-color="#666666">Next&nbsp;&gt;</a></div>
+</div>
+  <div>
+    <a href="./prod_product.html"><div class="prod_phone_btn wow jackInTheBox">查看更多果甘→</div></a>
+  </div>
+</div>
+        </section>
+
+
+        <!-- 客製禮盒------------------------------------ -->
+        <section class="index_box">
+            <h2 class="box_title  wow bounce">
+    <img src="./images/index/leaf6.svg" class="leafLeft">
+    <img src="./images/index/leaf5.svg" class="leafRight">
+    專屬禮盒設計
+</h2>
+
+<div class="contain">  
+    <h3>來設計獨一無二的禮盒吧^_^</h3>
+    <div class="index_box_outer">
+        <a href="box.html"><img src="./images/index/index_sizhen/index_box_img.svg" alt=""></a>
+        <img src="./images/index/index_sizhen/index_isLand.svg" alt="">     
+        <img src="./images/index/index_sizhen/green_balloon.svg" alt="">
+        <img src="./images/index/index_sizhen/red_balloon.svg" alt="">
+        <img src="./images/index/index_sizhen/yellow_balloon.svg" alt="">
+    </div>
+
+    <a href="box.html"><div class="box_btn wow jackInTheBox">開始設計→</div></a>
+    
+    <div class="hot_air_blue_balloon">
+        <img src="./images/index/index_sizhen/hot_air_blue_balloon.svg" alt="">
+    </div>
+    <div class="hot_air_red_balloon">
+        <img src="./images/index/index_sizhen/hot_air_red_balloon.svg" alt="">
+    </div>
+</div>
+        </section>
+
+
+        <!-- 客製果甘------------------------------------ -->
+        <section class="index_cust">
+            <h2 class="cust_title wow bounce">
+    <img src="./images/index/leaf6.svg" class="leafLeft">
+    <img src="./images/index/leaf5.svg" class="leafRight"> 客製果甘
+</h2>
+
+<div class="contain cust_contain_off">
+    <h3>不想總是一成不變嗎？
+        <br>歡迎來客製果甘^0^
+    </h3>
+    <div class="cust_qna_contain">
+        <div class="cust_contain cust_contain_off">
+            <div class="cust_wheelset wow slideInLeft">
+                <div class="cust_wheelstick"></div>
+                <ul class="cust_wheel" id="tabs">
+                    <div class="item1 item">
+                        <li class="content">
+                            <a href="#one">楊桃甘
+                                <div class="wheel_plate">
+                                    <img src="./images/index/index_felix/01_starFruit_c.png">
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="item2 item">
+                        <li class="content">
+                            <a href="#two">鳳梨甘
+                                <div class="wheel_plate">
+                                    <img src="./images/index/index_felix/02_pineapple_c.png">
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="item3 item">
+                        <li class="content">
+                            <a href="#three">火龍果甘
+                                <div class="wheel_plate">
+                                    <img src="./images/index/index_felix/03_dragon_c.png">
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="item4 item">
+                        <li class="content">
+                            <a href="#four">香蕉甘
+                                <div class="wheel_plate">
+                                    <img src="./images/index/index_felix/04_banana_c.png">
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="item5 item">
+                        <li class="content">
+                            <a href="#five">草莓甘
+                                <div class="wheel_plate">
+                                    <img src="./images/index/index_felix/05_stawberry_c.png">
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="item6 item">
+                        <li class="content">
+                            <a href="#six">芭樂甘
+                                <div class="wheel_plate">
+                                    <img src="./images/index/index_felix/06_guava_c.png">
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="item7 item">
+                        <li class="content">
+                            <a href="#seven">芒果甘
+                                <div class="wheel_plate">
+                                    <img src="./images/index/index_felix/07_mango_c.png">
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <div id="wrapper8">
+                        <div class="item8 item">
+                            <li class="content">
+                                <a href="#eight">蘋果甘
+                                    <div class="wheel_plate">
+                                        <img src="./images/index/index_felix/08_apple_c.png">
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+                <div id="center">
+                    <div id="one">
+                        <h4>楊桃甘</h4>
+                        <p>楊桃富含豐富的檸檬酸、草酸、蘋果酸等元素能有效的提高胃液的酸度，從而快速促進食物的消化已達到和健胃消食的作用。胸悶欲嘔、消化不良、腹脹打嗝，只要多吃楊桃，症狀便能逐漸減輕。
+                        </p>
+                    </div>
+                    <div id="two">
+                        <h4>鳳梨甘</h4>
+                        <p>含有大部分人體中所需的維生素、礦物質，能有效幫助消化吸收，此外，鳳梨中的鳳梨酵素，能有效分解食物蛋白質，促進腸胃蠕動，幫助排便。
+                        </p>
+                    </div>
+                    <div id="three">
+                        <h4>火龍果甘</h4>
+                        <p>火龍果有助於潤腸通便，還具有解除重金屬中毒、抗自由基等功效。
+                        </p>
+                    </div>
+                    <div id="four">
+                        <h4>香蕉甘</h4>
+                        <p>有研究指出香蕉能有效降低腦部血管阻塞風險。研究回顧了從60年代開始的11個文獻後指出，每天三餐各吃一根香蕉，可有效降低腦部血管阻塞風險達21％。
+                        </p>
+                    </div>
+                    <div id="five">
+                        <h4>草莓甘</h4>
+                        <p>草莓含果膠及抗氧化物較高，因此，可預防壞血病、動脈硬化和心血管可防止動脈硬化。
+                        </p>
+                    </div>
+                    <div id="six">
+                        <h4>芭樂甘</h4>
+                        <p>芭樂中含有多酚，多酚中的類黃酮素，包含常聽到的兒茶素、槲皮素、前花青素、木犀草素等抗氧化元素。這些元素可以幫助清除血液中多餘的低密度膽固醇（壞膽固醇），預防血栓形成。
+                        </p>
+                    </div>
+                    <div id="seven">
+                        <h4>芒果甘</h4>
+                        <p>芒果富含維生素B6，它對神經系統和大腦的正常運作十分重要。芒果還含有谷氨醯胺，有助於提高人的專注度，並改善記憶。
+                        </p>
+                    </div>
+                    <div id="eight">
+                        <h4>蘋果甘</h4>
+                        <p>蘋果具有健腦的作用，能夠延緩大腦的衰老速度，並且能有效改善失眠的狀況，蘋果中含有的微量元素能起到緩解便秘，多吃蘋果可以健腦，對大腦有好處，同時有利於心臟的保健。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="qna_contain wow slideInRight">
+            <div id="app">
+                <!-- 題目 -->
+                <div v-if="progress < quiz.length">
+                    <div class="quiz">
+                        <div class="qustions">
+                            <h5>{{quiz[progress].question}}</h5>
+                        </div>
+                        <div class="progressbar">
+                            <div class="progressbar text-center"
+                                style="background-color: green; margin: 0; color: white;"
+                                :style="{width:(progress*100/quiz.length)+'%'}">
+                                <!-- {{ progress }} -->
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- 選項 -->
+                        <div v-for="(item, index) in quiz[progress].options" :key="index" class="quizOptions">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="option" v-model="answer"
+                                    :value="optionsValue[index]">
+                                <span class="quizOption">
+                                    {{optionsValue[index]}}
+                                </span>
+                                <span class="quizText">
+                                    {{item}}
+                                </span>
+                            </label>
+                        </div>
+
+                        <!-- 按鈕 -->
+                        <div class="button-row">
+                            <div>
+                                <button v-if="progress===0" @click="prev()" type="button" class="btn-prev"
+                                    disabled>上一題</button>
+                                <button v-else @click="prev()" type="button" class="btn-prev">上一題</button>
+                            </div>
+                            <div>
+                                <button v-if="answer===''" @click="next()" type="button" class="btn-next"
+                                    disabled>下一題</button>
+                                <button v-else @click="next()" type="button" class="btn-next">下一題</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div v-else>
+                    <div>
+                        <div class="recommend">
+                            <h3>已完成測驗</h3>
+                            <h3 class="recommend_content">推薦您 {{recommend}} 號組合<br>去客製果甘看看組合有什麼吧!</h3>
+                        </div>
+                        <hr>
+                        <div class="button-row">
+                            <div>
+                                <button @click="back()" type="button" class="btn-back">重作測驗</button>
+                            </div>
+                            <div>
+                                <button @click="refreshto(url)" type="button" class="btn-go">前往客製果甘</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cust_platform"></div>
+    <button class="cust_more wow jackInTheBox">開始客製果甘→</button>
+</div>
+
+
+<!-- ------行動版--------------------------------------- -->
+<!-- ------行動版Tab----------------------------- -->
+<div class="cust_phone_h3">
+<h3>歡迎來到自由配</h3>
+<br>
+<h3>自由選擇，不受限</h3>
+<br>
+<br>
+</div>
+<div class="cust_phone_wrap">
+<div class="cust_wphone_content">
+    <label class="tab wow bounceInLeft" for="tab-starfruit">楊桃甘</label>
+    <label class="tab wow bounceInDown" for="tab-pineapple">鳳梨甘</label>
+    <label class="tab wow bounceInUp" for="tab-dragonfruit">火龍果甘</label>
+    <label class="tab wow bounceInRight" for="tab-banana">香蕉甘</label>
+    
+    <input type="radio" name="tabs" id="tab-starfruit">
+    <input type="radio" name="tabs" id="tab-pineapple">
+    <input type="radio" name="tabs" id="tab-dragonfruit">
+    <input type="radio" name="tabs" id="tab-banana">
+  
+    <div class="cube wow swing">
+      <div class="tab-content">
+        <h1>楊桃甘</h1>
+        <p>楊桃富含豐富的檸檬酸、草酸、蘋果酸等元素能有效的提高胃液的酸度，從而快速促進食物的消化已達到和健胃消食的作用。胸悶欲嘔、消化不良、腹脹打嗝，只要多吃楊桃，症狀便能逐漸減輕。</p>
+      </div>
+      <div class="tab-content">
+        <h1>鳳梨甘</h1>
+        <p>含有大部分人體中所需的維生素、礦物質，能有效幫助消化吸收，此外，鳳梨中的鳳梨酵素，能有效分解食物蛋白質，促進腸胃蠕動，幫助排便。</p>
+      </div>
+      <div class="tab-content">
+        <h1>火龍果甘</h1>
+        <p>火龍果有助於潤腸通便，還具有解除重金屬中毒、抗自由基等功效。</p>
+      </div>
+      <div class="tab-content">
+        <h1>香蕉甘</h1>
+        <p>有研究指出香蕉能有效降低腦部血管阻塞風險。研究回顧了從60年代開始的11個文獻後指出，每天三餐各吃一根香蕉，可有效降低腦部血管阻塞風險達21％。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ------行動版問答---------------------------->
+<div class="qna_contain qna_phone_contain">
+    <h2 class="cust_title_qna wow bounce"> Ｑ＆Ａ</h2>
+    <h3>不知道怎麼選</h3>
+    <br>
+    <h3>做個問答題吧</h3>
+    <br>
+    <div id="app2" class="wow slideInLeft">
+        <!-- 進度 -->
+        <!-- <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" :style="{width:(progress*100/quiz.length)+'%'}" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+               {{progress}} / {{quiz.length}}
+            </div>
+        </div> -->
+        <!-- 題目 -->
+        <div v-if="progress < quiz.length">
+            <div class="quiz">
+                <div class="qustions">
+                    <h5>{{quiz[progress].question}}</h5>
+                </div>
+                <div class="progressbar">
+                    <div class="progressbar text-center"
+                        style="background-color: green; margin: 0; color: white;"
+                        :style="{width:(progress*100/quiz.length)+'%'}">
+                        <!-- {{ progress }} -->
+                    </div>
+                </div>
+                <hr>
+                <!-- 選項 -->
+                <div v-for="(item, index) in quiz[progress].options" :key="index" class="quizOptions">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="option" v-model="answer"
+                            :value="optionsValue[index]">
+                        <span class="quizOption">
+                            {{optionsValue[index]}}
+                        </span>
+                        <span class="quizText">
+                            {{item}}
+                        </span>
+                    </label>
+                </div>
+
+                <!-- 按鈕 -->
+                <div class="button-row">
+                    <div>
+                        <button v-if="progress===0" @click="prev()" type="button" class="btn-prev"
+                            disabled>上一題</button>
+                        <button v-else @click="prev()" type="button" class="btn-prev">上一題</button>
+                    </div>
+                    <div>
+                        <button v-if="answer===''" @click="next()" type="button" class="btn-next"
+                            disabled>下一題</button>
+                        <button v-else @click="next()" type="button" class="btn-next">下一題</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div v-else>
+            <div>
+                <div class="recommend">
+                    <h3>已完成測驗</h3>
+                    <h3 class="recommend_content">推薦您 {{recommend}} 號組合<br>去客製果甘看看組合有什麼吧!</h3>
+                </div>
+                <hr>
+                <div class="button-row">
+                    <div>
+                        <button @click="back()" type="button" class="btn-back">重作測驗</button>
+                    </div>
+                    <div>
+                        <button @click="refreshto(url)" type="button" class="btn-go">前往客製果甘</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------行動版按鈕---------------------------->
+<div class="cust_pbtn_more">
+    <button class="cust_more cust_pbtn wow jackInTheBox">開始客製果甘→</button>
+</div>
+
+        </section>
+
+
+        <!-- 果甘話區------------------------------------ -->
+        <section class="index_bbs">
+            <h2 class="bbs_title wow bounce">
+    <img src="./images/index/leaf6.svg" class="leafLeft">
+    <img src="./images/index/leaf5.svg" class="leafRight"> 果甘話區
+</h2>
+
+<div class="contain">
+    <div class="postSwitch">
+        <form class="postSet" id="postSet">
+            <input id="hotPosts" type="radio" name="postSortby[]" value="like" checked>
+            <label for="hotPosts">果甘熱門話題</label>
+            <input id="newPosts" type="radio" name="postSortby[]" value="time">
+            <label for="newPosts">果甘最新話題</label>
+        </form>
+    </div>
+    
+    <div class="bbs_articles" id="bbsArticles">
+        
+    </div>
+    <a href="forum.php" class="bbs_btn wow jackInTheBox">查看更多話題→</a>
+</div>
+        </section>
+
+
+        <!-- footer------------------------------------ -->
+        <footer>
+    <div class="footer_content">
+        <strong>地址：320 桃園市中壢區中大路300號<br></strong>
+        <strong>電話：03-4257387<br></strong>
+        <strong>信箱：DD105G3@gmail.com<br></strong>
+        <strong>Copyright &copy; 2020 Natural Sweet</srong>
+            <i class="fas fa-leaf"></i>
+    </div>
+</footer>
+
+        <!-- loading -->
+        <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading</title>
+    <link rel="stylesheet" href="css/loading.css">
+</head> -->
+<!-- <body> -->
+    <div id="fountainTextG">
+        <img src="./images/Logo.svg" alt="logo">
+        <div id="fountainTextG_1" class="fountainTextG">L</div>
+        <div id="fountainTextG_2" class="fountainTextG">o</div>
+        <div id="fountainTextG_3" class="fountainTextG">a</div>
+        <div id="fountainTextG_4" class="fountainTextG">d</div>
+        <div id="fountainTextG_5" class="fountainTextG">i</div>
+        <div id="fountainTextG_6" class="fountainTextG">n</div>
+        <div id="fountainTextG_7" class="fountainTextG">g</div>
+    </div>
+    
+
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/loading.js"></script>
+<!-- </body>
+</html> -->
+</body>
+
+</html>

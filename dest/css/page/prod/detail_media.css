@@ -1,0 +1,105 @@
+@media all and (max-width: 1200px) {
+  .detail_wrapper {
+    width: 992px;
+    padding: 15px;
+    position: relative;
+    left: 50%;
+    margin-left: -500px; } }
+
+@media all and (max-width: 992px) {
+  .detail_wrapper {
+    width: 768px;
+    padding: 15px;
+    position: relative;
+    left: 50%;
+    margin-left: -384px; } }
+
+@media all and (max-width: 768px) {
+  .detail_wrapper {
+    width: 600px;
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    margin-left: -300px; }
+  .detail_wrapper > .prdt_img {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5%;
+    background-color: white;
+    border-radius: 4px; }
+  .prdt_text {
+    float: left;
+    display: block;
+    width: 80%;
+    margin: 10%;
+    padding-left: 0px; }
+    .prdt_text p.introduce {
+      padding: 10px; } }
+
+@media all and (max-width: 680px) {
+  .detail_wrapper {
+    width: 570px;
+    padding: 5px;
+    position: relative;
+    left: 50%;
+    margin-left: -285px; } }
+
+@media all and (max-width: 576px) {
+  .detail_wrapper {
+    width: 480px;
+    padding: 5px;
+    position: relative;
+    left: 50%;
+    margin-left: -240px; }
+  ul.prtd_comment {
+    width: 98%;
+    margin: 0;
+    margin-left: 1%;
+    height: 600px;
+    padding: 5px 10px;
+    line-height: 1.4;
+    background-color: white;
+    border-radius: 20px; }
+  table.previous_and_next h4 {
+    font-size: 1.25rem; } }
+
+@media all and (max-width: 480px) {
+  .detail_wrapper {
+    width: 376px;
+    position: relative;
+    left: 50%;
+    margin-left: -188px; }
+  .quantity {
+    font-size: 1.5rem;
+    margin: 5px; }
+    .quantity h4 {
+      margin: 0px; }
+  #howmany {
+    width: 30px;
+    background-color: white;
+    border: 1px solid #CCCBCF;
+    margin: 0px;
+    padding: 4px; }
+  button.count {
+    width: 30px;
+    background-color: #CCCBCF;
+    padding: 2px 4px; }
+  table.previous_and_next h4 {
+    font-size: 1.0rem; } }
+
+@media all and (max-width: 376px) {
+  .detail_wrapper {
+    width: 320px;
+    position: relative;
+    left: 50%;
+    margin-left: -160px; }
+  .quantity {
+    font-size: 1.3rem;
+    margin: 0px; }
+    .quantity h4 {
+      font-size: 1.3rem;
+      margin: 0px; }
+  table.previous_and_next h4 {
+    font-size: 0.8rem; }
+  button.green_btn {
+    margin-left: 0px; } }

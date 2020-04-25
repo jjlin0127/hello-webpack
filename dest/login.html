@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登入 | 天然甘</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/shortIcon.png">
+    <link rel="stylesheet" href="./css/page/login/login.css">
+
+    <!-- fontawesome -->
+    <script src="./js/all.js"></script>
+
+    <!-- jquery&jqueryUI -->
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+
+    <script src="./js/login.js"></script>
+</head>
+
+<body>
+    <script src="./js/hamburger.js"></script>
+<script src="./js/login_common.js"></script>
+<header>
+    <nav class="header__container">
+        <span class="logo">
+            <a href="home.html"><img src="./images/Logo.svg"></a>
+        </span>
+        <div class="navList">
+            <a class="navItem @@focus01" href="about.html">果甘物語 <i class="fas fa-seedling"></i></a>
+            <a class="navItem @@focus02" href="prod_product.html">特色果甘 <i class="fas fa-apple-alt"></i></a>
+            <a class="navItem @@focus03" href="box.html">客製禮盒 <i class="fas fa-gift"></i></a>
+            <a class="navItem @@focus04" href="cusfruits.html">客製果甘 <i class="fas fa-lemon"></i></a>
+            <!-- <a class="navItem @@focus05" href="#">折扣遊戲 <i class="fas fa-carrot"></i></a> -->
+            <a class="navItem @@focus06" href="forum.php">果甘話區 <i class="fas fa-leaf"></i></a>
+        </div>
+        <div class="navList_2">
+            <input id="memNo" type="hidden" value="">
+            <a id="shopCart" class="navItem_2" href="prod_shopping.html">
+                <i class="fas fa-shopping-cart"></i><span id="a_count"></span></a>
+            <a id="memNickname" href="member.html">&nbsp;</a>
+            <!-- 會員暱稱 -->
+            <a id="spanLogin" class="navItem_2">登入</a>
+        </div>
+    </nav>
+    <nav class="rwdHeader">
+        <div class="rwdHeaderWrap">
+            <a href="home.html">
+                <img id="topLogo2" src="./images/Logo.svg">
+            </a>
+            <button class="hamburger hamburger--elastic" id="hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="rwdHamburgerMenu">
+        <nav>
+            <ul>
+                <a href="member.html">
+                    <li id="mobilememNickname">&nbsp;</li>
+                </a>
+                <a id="mobileloginLink">
+                    <li id="mobilespanLogin">登入 <i class="fas fa-user-circle"></i></li>
+                </a>
+                <a id="shopCart" href="prod_shopping.html">
+                    
+                    <li>購物車<i class="fas fa-shopping-cart"></i><span id="b_count"></span></li>
+                </a>
+                <a href="about.html">
+                    <li>果甘物語 <i class="fas fa-seedling"></i></li>
+                </a>
+                <a href="prod_product.html">
+                    <li>特色果甘 <i class="fas fa-apple-alt"></i></li>
+                </a>
+                <a href="box.html">
+                    <li>客製禮盒 <i class="fas fa-gift"></i></li>
+                </a>
+                <a href="cusfruits.html">
+                    <li>客製果甘 <i class="fas fa-lemon"></i></li>
+                </a>
+                <!-- <a href="#">
+                    <li>折扣遊戲 <i class="fas fa-carrot"></i></li>
+                </a> -->
+                <a href="forum.php">
+                    <li>果甘話區 <i class="fas fa-leaf"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- alert start -->
+    <div id="alertBox" class="alertBox hidden">
+        <span id="close_alert_btn">&times;</span>
+        <span id="alertMessage"></span>
+    </div>
+    <!-- alert end -->
+
+    <div class="signupcontainer">
+        <div class="imageblock">
+            <div class="whiteform" style="transform: translateX(0%);">
+                <div class="signup">
+                    <h1>註冊帳號</h1>
+                    <form method="POST" id="pcSignUpForm">
+                        <label>暱稱</label>
+                        <input type="text" class="emailinput regisnickname" name="memNickname">
+                        <label>E-mail*:</label>
+                        <input type="email" class="emailinput registeremail" name="memId" title="請輸入完整email地址">
+                        <span class="emailHint"></span>
+                        <label>密碼*:</label>
+                        <div>
+                            <input type="password" class="emailinput firsttimepsw registerinput1" name="memPsw"
+                                title="密碼請輸入6-18碼英文、數字。">
+                            <img class="showText" src="./images/login/hidePasswd.jpg">
+                            <span class="pswHint"></span>
+                        </div>
+                        <label>確認密碼*:</label>
+                        <div>
+                            <input type="password" class="emailinput confirmpsw registerinput1" name="memPsw"
+                                title="密碼請輸入6-18碼英文、數字。">
+                            <img class="showText" src="./images/login/hidePasswd.jpg">
+                            <span class="pswHint"></span>
+                        </div>
+                        <button id="btnRegis">註冊</button>
+                    </form>
+                </div>
+                <div class="signin">
+                    <h1>登入會員</h1>
+                    <form method="POST" id="pcSignInForm">
+                        <label>E-mail*:</label>
+                        <input type="email" class="emailinput" title="請輸入完整email地址" name="memId" id="memId">
+                        <label>密碼*:</label>
+                        <div>
+                            <input type="password" title="密碼請輸入6-18碼英文、數字。" name="memPsw" id="memPsw">
+                            <img class="showText" src="./images/login/hidePasswd.jpg">
+                        </div>
+                        <button id="btnLogin">登入</button>
+                    </form>
+                </div>
+            </div>
+            <div class="leftbox">
+                <h2 class="title"><span>天然甘</span><br>新鮮水果製成果乾</h2>
+                <p class="account">已經有帳號了嗎?</p>
+                <button id="signin">登入</button>
+            </div>
+            <div class="rightbox">
+                <h2 class="title"><span>天然水果甘</span><br>歡迎光臨天然甘</h2>
+                <img class="juicyfruit" src="./images/login/block_right.png">
+                <p class="account">還沒有帳號嗎?</p>
+                <button id="signup">註冊</button>
+            </div>
+        </div>
+    </div>
+    <div id="mobilelogintab">
+        <ul class="motabtitle">
+            <li><a href="#mobilelogintab1">登入</a></li>
+            <li><a href="#mobilelogintab2">註冊</a></li>
+        </ul>
+        <div id="mobilelogintab1" class="motabinner">
+            <form method="POST">
+                <label>E-mail*:</label>
+                <input type="email" class="emailinput" title="請輸入完整email地址" name="memId" id="mobilememId">
+                <label>密碼*:</label>
+                <div>
+                    <input type="password" class="mempsw" title="密碼請輸入6-18碼英文、數字。" name="memPsw"
+                        id="mobilememPsw">
+                    <img class="showText" src="./images/login/hidePasswd.jpg">
+                </div>
+                <button id="mobilebtnLogin">登入</button>
+            </form>
+        </div>
+        <div id="mobilelogintab2" class="motabinner">
+            <form method="POST">
+                <label>暱稱</label>
+                <input type="text" class="emailinput regisnickname" name="memNickname">
+                <label>E-mail*:</label>
+                <input type="email" class="emailinput registeremail" name="memId">
+                <span class="emailHint"></span>
+                <label>密碼*:</label>
+                <div>
+                    <input type="password" class="emailinput firsttimepsw registerinput1" name="memPsw">
+                    <img class="showText" src="./images/login/hidePasswd.jpg">
+                    <span class="pswHint"></span>
+                </div>
+                <label>確認密碼*:</label>
+                <div>
+                    <input type="password" class="emailinput confirmpsw registerinput1" name="memPsw">
+                    <img class="showText" src="./images/login/hidePasswd.jpg">
+                    <span class="pswHint"></span>
+                </div>
+                <button id="mobilebtnRegis">註冊</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+    <div class="footer_content">
+        <strong>地址：320 桃園市中壢區中大路300號<br></strong>
+        <strong>電話：03-4257387<br></strong>
+        <strong>信箱：DD105G3@gmail.com<br></strong>
+        <strong>Copyright &copy; 2020 Natural Sweet</srong>
+            <i class="fas fa-leaf"></i>
+    </div>
+</footer>
+</body>
+
+</html>

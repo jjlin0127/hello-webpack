@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>客製禮盒 | 天然甘</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/shortIcon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/page/box/box.css">
+    <script src="./js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+    <script src="js/box.js"></script>
+    
+    <script src="js/shopping_cart01.js"></script>
+    <!-- <link rel="stylesheet" href="js/default.css"> -->
+    <script src="js/index.js"></script>
+    <!--optional import of scroll behaviour-->
+    <script src="js/scroll-behaviour.js"></script>
+    <script>
+        // options are optional ;)
+        MobileDragDrop.polyfill({
+            // use this to make use of the scroll behaviour
+            dragImageTranslateOverride: MobileDragDrop.scrollBehaviourDragImageTranslateOverride
+        });
+    </script>
+    <script src="js/lightbox.js"></script>
+</head>
+<body id="box-body">
+    <script src="./js/hamburger.js"></script>
+<script src="./js/login_common.js"></script>
+<header>
+    <nav class="header__container">
+        <span class="logo">
+            <a href="home.html"><img src="./images/Logo.svg"></a>
+        </span>
+        <div class="navList">
+            <a class="navItem @@focus01" href="about.html">果甘物語 <i class="fas fa-seedling"></i></a>
+            <a class="navItem @@focus02" href="prod_product.html">特色果甘 <i class="fas fa-apple-alt"></i></a>
+            <a class="navItem focus" href="box.html">客製禮盒 <i class="fas fa-gift"></i></a>
+            <a class="navItem @@focus04" href="cusfruits.html">客製果甘 <i class="fas fa-lemon"></i></a>
+            <!-- <a class="navItem @@focus05" href="#">折扣遊戲 <i class="fas fa-carrot"></i></a> -->
+            <a class="navItem @@focus06" href="forum.php">果甘話區 <i class="fas fa-leaf"></i></a>
+        </div>
+        <div class="navList_2">
+            <input id="memNo" type="hidden" value="">
+            <a id="shopCart" class="navItem_2" href="prod_shopping.html">
+                <i class="fas fa-shopping-cart"></i><span id="a_count"></span></a>
+            <a id="memNickname" href="member.html">&nbsp;</a>
+            <!-- 會員暱稱 -->
+            <a id="spanLogin" class="navItem_2">登入</a>
+        </div>
+    </nav>
+    <nav class="rwdHeader">
+        <div class="rwdHeaderWrap">
+            <a href="home.html">
+                <img id="topLogo2" src="./images/Logo.svg">
+            </a>
+            <button class="hamburger hamburger--elastic" id="hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="rwdHamburgerMenu">
+        <nav>
+            <ul>
+                <a href="member.html">
+                    <li id="mobilememNickname">&nbsp;</li>
+                </a>
+                <a id="mobileloginLink">
+                    <li id="mobilespanLogin">登入 <i class="fas fa-user-circle"></i></li>
+                </a>
+                <a id="shopCart" href="prod_shopping.html">
+                    
+                    <li>購物車<i class="fas fa-shopping-cart"></i><span id="b_count"></span></li>
+                </a>
+                <a href="about.html">
+                    <li>果甘物語 <i class="fas fa-seedling"></i></li>
+                </a>
+                <a href="prod_product.html">
+                    <li>特色果甘 <i class="fas fa-apple-alt"></i></li>
+                </a>
+                <a href="box.html">
+                    <li>客製禮盒 <i class="fas fa-gift"></i></li>
+                </a>
+                <a href="cusfruits.html">
+                    <li>客製果甘 <i class="fas fa-lemon"></i></li>
+                </a>
+                <!-- <a href="#">
+                    <li>折扣遊戲 <i class="fas fa-carrot"></i></li>
+                </a> -->
+                <a href="forum.php">
+                    <li>果甘話區 <i class="fas fa-leaf"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <div class="popup">
+        <h3>客製禮盒步驟</h3>
+        <div class="step_wrap">
+            <div class="step">
+                <div class="circle">1</div>
+                <p>點選左方按鈕縮放禮盒大小、旋轉角度及選擇盒面</p>
+            </div>
+            <div class="step">
+                <div class="circle">2</div>
+                <p>選擇盒面後，用調色盤改變盒面顏色</p>
+            </div>
+            <div class="step">
+                <div class="circle">3</div>
+                <p>拖曳圖片至盒面</p>
+            </div>
+            <div class="step">
+                <div class="circle">4</div>
+                <p>點擊盒面圖片進行選取</p>
+            </div>
+            <div class="step">
+                <div class="circle">5</div>
+                <p>使用圖片欄的按鈕對選取圖片進行放大縮小、旋轉及刪除</p>
+            </div>
+            <div class="step">
+                <div class="circle">6</div>
+                <p>完成後，放入購物車</p>
+            </div>
+        </div>
+        <button name="close">我知道了</button>
+    </div>
+    <!-- </div> -->
+    
+    <h2>客製禮盒
+        <img src="./images/index/leaf6.svg" class="leafLeft">
+        <img src="./images/index/leaf5.svg" class="leafRight">
+    </h2>
+    <div class="box_contain">
+        <div class="outer">
+            <div class="bow-knot-left">
+                <img src="images/box/bow-knot.png">
+            </div>
+            <div class="bow-knot-right">
+                <img src="images/box/bow-knot.png">
+            </div>
+            <div class="button-wrap">
+                <label class="for-zoom-cube" for="zoom-cube">縮放</label>
+                <label class="for-rotate-cube" for="rotate-cube">旋轉</label>
+                <label class="for-front" for="show-front">前</label>
+                <label class="for-back" for="show-back">後</label>
+                <label class="for-top" for="show-top">上</label>
+                <label class="for-bottom" for="show-bottom">下</label>
+                <label class="for-left" for="show-left">左</label>
+                <label class="for-right" for="show-right">右</label>
+                
+            </div>
+            <div class="box">
+                <input type="checkbox" id="zoom-cube">
+                <input type="checkbox" id="rotate-cube" checked>
+                <input type="radio" id="show-front">
+                <input type="radio" id="show-back">
+                <input type="radio" id="show-top">
+                <input type="radio" id="show-bottom">
+                <input type="radio" id="show-left">
+                <input type="radio" id="show-right">
+                <div class="cube-wrap">
+                    <div class="cube">
+                        <div class="cube-face cube-face-front checked" ></div>
+                        <div class="cube-face cube-face-back" ></div>
+                        <div class="cube-face cube-face-top" ></div>
+                        <div class="cube-face cube-face-left" ></div>
+                        <div class="cube-face cube-face-right" ></div>
+                        <div class="cube-face cube-face-bottom" ></div>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="tab_wrap">
+                <ul class="tabs">
+                    <li><a href="#tab1">顏色</a></li>
+                    <li><a href="#tab2">圖片</a></li>
+                    <!-- <li><a href="#tab3">文字</a></li> -->
+                </ul>
+        
+                <div class="tab_container">
+                    <div id="tab1" class="tab_content">
+                        <div id="picker"></div>
+                    </div>
+                    <div id="tab2" class="tab_content">
+                        <div class="item-wrap" id="boxImgContent">
+                            <!-- <div class="item"><img src="images/box/cusImg01.svg" alt="" class="drag_img"></div>
+                            <div class="item"><img src="images/box/cusImg02.svg" alt="" class="drag_img"></div>
+                            <div class="item"><img src="images/box/cusImg03.svg" alt="" class="drag_img"></div>
+                            <div class="item"><img src="images/box/cusImg04.svg" alt="" class="drag_img"></div>
+                            <div class="item"><img src="images/box/cusImg05.svg" alt="" class="drag_img"></div>
+                            <div class="item"><img src="images/box/cusImg06.svg" alt="" class="drag_img"></div>
+                            <div class="item"><img src="images/box/cusImg07.svg" alt="" class="drag_img"></div>
+                            <div class="item"><img src="images/box/cusImg08.svg" alt="" class="drag_img"></div>
+                            <div class="item"><img src="" alt="" id="myImg" class="drag_img"></div> -->
+                        </div>
+                        <form action="">
+                            <label for="">上傳圖片:</label>
+                            <input type="file" id="theFile">
+                        </form>
+                        <div class="btn_wrap">
+                            <img src="images/box/large.svg" alt="" id="large">
+                            <img src="images/box/small.svg" alt="" id="small">
+                            <img src="images/box/turnLeft.svg" alt="" id="turnLeft">
+                            <img src="images/box/turnRight.svg" alt="" id="turnRight">
+                            <img src="images/box/delete.svg" alt="" id="deleteBtn">
+                        </div>
+                        
+                    </div>
+                    <!-- <div id="tab3" class="tab_content">    
+                        <input type="button" value="新增文字">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- 一定要用button去，不能用div，否則沒法按 然後button的class名稱裡面要加'putin'，然後加一個id名稱'put_10'-->
+        <button class="addCartBtn putin" id="putin_10">放入購物車
+            <input type="hidden" value="客製禮盒|boxInCart.png|200">
+        </button>
+        <!-- 再傳送到購物車之前，客製禮盒的購買紀錄會先存到底下這個"newItem"這個div裡面" -->
+        <div style="display:none;" id="newItem">
+        <!-- <div style="height:100px;border:3px solid blue;overflow: scroll;" id="newItem"> -->
+            <div id="content">
+                項目數量：<span id="itemCount">0</span>
+                <br>
+                總金額：$<span id="subtotal">0</span>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+    <div class="footer_content">
+        <strong>地址：320 桃園市中壢區中大路300號<br></strong>
+        <strong>電話：03-4257387<br></strong>
+        <strong>信箱：DD105G3@gmail.com<br></strong>
+        <strong>Copyright &copy; 2020 Natural Sweet</srong>
+            <i class="fas fa-leaf"></i>
+    </div>
+</footer>
+</body>
+</html>
+

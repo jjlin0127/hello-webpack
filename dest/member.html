@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>會員中心</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" href="./css/page/member/member.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Indie+Flower|Acme|Amatic+SC|Kanit|Maven+Pro|Prompt&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script defer src="https://use.fontawesome.com/releases/v5.10.1/js/all.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script defer src="./js/member.js"></script>
+<script src="./js/jquery-3.4.1.js"></script>
+
+
+</head>
+
+<body>
+  <!-- header---------------------------------- -->
+  <script src="./js/hamburger.js"></script>
+<script src="./js/login_common.js"></script>
+<header>
+    <nav class="header__container">
+        <span class="logo">
+            <a href="home.html"><img src="./images/Logo.svg"></a>
+        </span>
+        <div class="navList">
+            <a class="navItem @@focus01" href="about.html">果甘物語 <i class="fas fa-seedling"></i></a>
+            <a class="navItem @@focus02" href="prod_product.html">特色果甘 <i class="fas fa-apple-alt"></i></a>
+            <a class="navItem @@focus03" href="box.html">客製禮盒 <i class="fas fa-gift"></i></a>
+            <a class="navItem @@focus04" href="cusfruits.html">客製果甘 <i class="fas fa-lemon"></i></a>
+            <!-- <a class="navItem @@focus05" href="#">折扣遊戲 <i class="fas fa-carrot"></i></a> -->
+            <a class="navItem @@focus06" href="forum.php">果甘話區 <i class="fas fa-leaf"></i></a>
+        </div>
+        <div class="navList_2">
+            <input id="memNo" type="hidden" value="">
+            <a id="shopCart" class="navItem_2" href="prod_shopping.html">
+                <i class="fas fa-shopping-cart"></i><span id="a_count"></span></a>
+            <a id="memNickname" href="member.html">&nbsp;</a>
+            <!-- 會員暱稱 -->
+            <a id="spanLogin" class="navItem_2">登入</a>
+        </div>
+    </nav>
+    <nav class="rwdHeader">
+        <div class="rwdHeaderWrap">
+            <a href="home.html">
+                <img id="topLogo2" src="./images/Logo.svg">
+            </a>
+            <button class="hamburger hamburger--elastic" id="hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="rwdHamburgerMenu">
+        <nav>
+            <ul>
+                <a href="member.html">
+                    <li id="mobilememNickname">&nbsp;</li>
+                </a>
+                <a id="mobileloginLink">
+                    <li id="mobilespanLogin">登入 <i class="fas fa-user-circle"></i></li>
+                </a>
+                <a id="shopCart" href="prod_shopping.html">
+                    
+                    <li>購物車<i class="fas fa-shopping-cart"></i><span id="b_count"></span></li>
+                </a>
+                <a href="about.html">
+                    <li>果甘物語 <i class="fas fa-seedling"></i></li>
+                </a>
+                <a href="prod_product.html">
+                    <li>特色果甘 <i class="fas fa-apple-alt"></i></li>
+                </a>
+                <a href="box.html">
+                    <li>客製禮盒 <i class="fas fa-gift"></i></li>
+                </a>
+                <a href="cusfruits.html">
+                    <li>客製果甘 <i class="fas fa-lemon"></i></li>
+                </a>
+                <!-- <a href="#">
+                    <li>折扣遊戲 <i class="fas fa-carrot"></i></li>
+                </a> -->
+                <a href="forum.php">
+                    <li>果甘話區 <i class="fas fa-leaf"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <div class="member_contain">
+    <!-- Title------------------------------- -->
+    <h2 class="member_title">
+      <img src="./images/index/leaf6.svg" class="leafLeft">
+      <img src="./images/index/leaf5.svg" class="leafRight">
+      歡迎來到會員中心
+    </h2>
+    <section>
+      <h3 class="memBanner wow bounce">
+        <span class="text-wrapper">
+            <span class="letters"> - Natural Sweet - </span>
+        </span>
+      </h3>
+      <div class="ufo">
+        <img src="./images/member/ufo2.png" class="ufoimg1" alt="">
+        <img src="./images/member/ufo2.png" class="ufoimg2" alt="">
+      </div>
+    </section>
+    <!-- bgc---------------------------------- -->
+    <div class="sky-container">
+      <div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+    </div>
+    <div class="member_wrap">
+      <div class="member_content">
+        <article class="member_item">
+    <div class="member_info">
+      <div class="center">
+        <div class="more-info">
+          <div class="mem_info_container">
+            <form action="" name="selfieForm" id="selfieForm" method="POST" enctype="multipart/form-data">
+            <div id="selfie_container" class="selfie">
+                <div class="selfie_container" style='background-image: url(./images/member/headShot/default.jpg);'></div>
+                <br>
+                <input type="file" name="" id="memSelfie">
+            </div>
+            </form>
+            <form action="" method="POST" id="memForm">
+                <span>帳號: </span>
+                <span id="memId"></span>
+                <br>
+                <span>姓名: </span>
+                <input type="text" neme="memName" id="memName">
+                <br>
+                <span>暱稱: </span>
+                <input type="text" neme="memNickname" id="memNickname">
+                <br>
+                <span>密碼: </span>
+                <input type="password" name="memName" id="memPwd">
+                <br>
+                <span>電話: </span>
+                <input type="tel" name="memTel" id="memTel">
+                <br>
+                <span>點數: </span>
+                <input type="number"" name="memPoint" id="memPoint" disabled="true">
+                <br>
+                <input id="member_info_btn" class="member_info_btn" type="submit" value="確定修改">
+            </form>
+        </div>
+        </div>
+        <img src="./images/member/fullmoon.svg">
+      </div>
+      <div class="outer-container">
+        <div class="outer_item">
+          <img src="./images/member/rabbit.png">
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <div class="island">
+    <img src="./images/index/index_sizhen/index_isLand.svg" alt="">
+  </div>
+
+      </div>
+      <div class="member_secWrap">
+        <div class="order_wrap firstOrderWrap">
+    <div class="main">
+      <h1>我的訂單</h1>
+      <p class="firstOrderBtn_p"><a href="###" class="firstOrderBtn">ORDER</a></p>
+    </div>
+    <div class="order_content firstOrderContent">
+      <a class="close firstClose" href="###"></a>
+      <div class="order_border">
+      <h1>我的訂單</h1>
+      <!-- Order-------------------------- -->
+      <div class="order">
+        <div class="orderitem">
+            <p class="aticleList_btn">展開清單 v</p>
+            <div class=line></div>
+            <div class="orderLis_content">
+                <table class="member_aticleTable member_myOrder">
+                    <thead>
+                        <tr class="tableHead">
+                            <th>訂單編號</th>
+                            <th>訂購時間</th>
+                            <th>訂單總價</th>
+                            <th>訂單狀態</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myOrder"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- ----------- -->
+    </div>
+  </div>
+ </div>
+
+ <!-- UFO-------------------------- -->
+<div class="ufo_under">
+    <img src="./images/member/ufo2.png" class="ufoimg3" alt="">
+    <img src="./images/member/ufo2.png" class="ufoimg4" alt="">
+</div>
+
+ <!-- ----------------------------- -->
+ <div class="order_wrap secOrderWrap">
+  <div class="main">
+    <h1>我的收藏</h1>
+    <p class="secOrderBtn_p"><a href="###" class="secOrderBtn">SUBSCRIBE</a></p>
+  </div>
+  <div class="order_content secOrderContent">
+    <a class="close secClose" href="###"></a>
+    <div class="order_border">
+    <h1>- 我的話題 -</h1>
+    <!-- Subscribe-------------------------- -->
+    <div class="order">
+        <div class="orderitem">
+            <p class="aticleList_btn">展開清單 v</p>
+            <div class=line></div>
+            <div class="orderLis_content">
+                <table class="member_aticleTable member_myAticle">
+                    <thead>
+                        <tr class="tableHead">
+                            <th>標題</th>
+                            <th>發表時間</th>
+                            <th>愛心數</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myAticle"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- ----------- -->
+    <h1>- 我的收藏 -</h1>
+    <div class="order">
+        <div class="orderitem">
+            <p class="aticleList_btn">展開清單 v</p>
+            <div class=line></div>
+            <div class="orderLis_content">
+                <table class="member_aticleTable member_mycollection">
+                    <thead>
+                        <tr class="tableHead">
+                            <th>標題</th>
+                            <th>發表時間</th>
+                            <th>留言數</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myCollect"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- ----------- --> 
+    <h1>- 我的訂閱 -</h1>
+    <div class="order">
+        <div class="orderitem">
+            <p class="aticleList_btn">展開清單 v</p>
+            <div class=line></div>
+            <div class="orderLis_content">
+                <table class="member_aticleTable member_mySubscription">
+                    <thead>
+                        <tr class="tableHead">
+                            <th>作者</th>
+                            <th>最近發表標題</th>
+                            <th>最近發表時間</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mySubscription"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- ----------- -->    
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+  <!-- footer---------------------------------- -->
+  <footer>
+    <div class="footer_content">
+        <strong>地址：320 桃園市中壢區中大路300號<br></strong>
+        <strong>電話：03-4257387<br></strong>
+        <strong>信箱：DD105G3@gmail.com<br></strong>
+        <strong>Copyright &copy; 2020 Natural Sweet</srong>
+            <i class="fas fa-leaf"></i>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>客製果甘 | 天然甘</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/shortIcon.png">
+    <link rel="stylesheet" href="./css/page/custfruits/cusfruits.css">
+
+    <!-- fontawesome -->
+    <script src="./js/all.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+
+    <!-- jquery&jqueryUI -->
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+
+    <!-- wow cdn -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="./js/dist/cusfruits.bundle.js"></script>
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/login_common.js"></script>
+</head>
+
+<body>
+
+<header>
+    <nav class="header__container">
+        <span class="logo">
+            <a href="home.html"><img src="./images/Logo.svg"></a>
+        </span>
+        <div class="navList">
+            <a class="navItem @@focus01" href="about.html">果甘物語 <i class="fas fa-seedling"></i></a>
+            <a class="navItem @@focus02" href="prod_product.html">特色果甘 <i class="fas fa-apple-alt"></i></a>
+            <a class="navItem @@focus03" href="box.html">客製禮盒 <i class="fas fa-gift"></i></a>
+            <a class="navItem focus" href="cusfruits.html">客製果甘 <i class="fas fa-lemon"></i></a>
+            <!-- <a class="navItem @@focus05" href="#">折扣遊戲 <i class="fas fa-carrot"></i></a> -->
+            <a class="navItem @@focus06" href="forum.php">果甘話區 <i class="fas fa-leaf"></i></a>
+        </div>
+        <div class="navList_2">
+            <input id="memNo" type="hidden" value="">
+            <a id="shopCart" class="navItem_2" href="prod_shopping.html">
+                <i class="fas fa-shopping-cart"></i><span id="a_count"></span></a>
+            <a id="memNickname" href="member.html">&nbsp;</a>
+            <!-- 會員暱稱 -->
+            <a id="spanLogin" class="navItem_2">登入</a>
+        </div>
+    </nav>
+    <nav class="rwdHeader">
+        <div class="rwdHeaderWrap">
+            <a href="home.html">
+                <img id="topLogo2" src="./images/Logo.svg">
+            </a>
+            <button class="hamburger hamburger--elastic" id="hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="rwdHamburgerMenu">
+        <nav>
+            <ul>
+                <a href="member.html">
+                    <li id="mobilememNickname">&nbsp;</li>
+                </a>
+                <a id="mobileloginLink">
+                    <li id="mobilespanLogin">登入 <i class="fas fa-user-circle"></i></li>
+                </a>
+                <a id="shopCart" href="prod_shopping.html">
+                    
+                    <li>購物車<i class="fas fa-shopping-cart"></i><span id="b_count"></span></li>
+                </a>
+                <a href="about.html">
+                    <li>果甘物語 <i class="fas fa-seedling"></i></li>
+                </a>
+                <a href="prod_product.html">
+                    <li>特色果甘 <i class="fas fa-apple-alt"></i></li>
+                </a>
+                <a href="box.html">
+                    <li>客製禮盒 <i class="fas fa-gift"></i></li>
+                </a>
+                <a href="cusfruits.html">
+                    <li>客製果甘 <i class="fas fa-lemon"></i></li>
+                </a>
+                <!-- <a href="#">
+                    <li>折扣遊戲 <i class="fas fa-carrot"></i></li>
+                </a> -->
+                <a href="forum.php">
+                    <li>果甘話區 <i class="fas fa-leaf"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- alert start -->
+    <div id="alertBox" class="alertBox hidden">
+        <span id="close_alert_btn">&times;</span>
+        <span id="alertMessage"></span>
+    </div>
+    <!-- alert end -->
+
+    <div class="paddingtop">
+        <h2 class="title_cusfruits">
+            <img src="./images/index/leaf6.svg" class="leafLeft">
+            <img src="./images/index/leaf5.svg" class="leafRight"> 客製果甘
+        </h2>
+    </div>
+    <div class="popup">
+        <h3>客製果甘步驟</h3>
+        <div class="guides">
+            <div>
+                <span>1</span>
+                <p>點擊果甘添加至中間袋中，選滿 6 樣即可放入購物車。</p>
+            </div>
+            <div>
+                <span>2</span>
+                <p>養生指數會提示您搭配的療效。</p>
+            </div>
+            <div>
+                <span>3</span>
+                <p>在放入購物車之前也可以替這次組合命名，方便下次選購喔！</p>
+            </div>
+        </div>
+        <button name="close">我知道了</button>
+    </div>
+    <div class="cusfruits_wrapper">
+        <div class="recommended">
+            <p>根據問答小測驗，天然甘推薦您
+                <span id="cusFruitsName"></span>
+                組合, 也會適度搭配其他果甘並重喔！</p>
+            <p>建議果乾組合:
+                <span id="prodNo1"></span>
+                <span id="prodNo2"></span>
+                <span id="prodNo3"></span>
+                <span id="prodNo4"></span>
+                <span id="prodNo5"></span>
+                <span id="prodNo6"></span>
+            </p>
+        </div>
+        <div class="guides_inpage">
+            <div>
+                <span>1</span>
+                <p>點擊添加6樣</p>
+            </div>
+            <div></div>
+            <div>
+                <span>2</span>
+                <p>查看您搭配的療效</p>
+            </div>
+            <div></div>
+            <div>
+                <span>3</span>
+                <p>完成送出</p>
+            </div>
+        </div>
+        <div class="cusfruits_inner">
+            <div class="wrapper_left">
+                <div class="cabinet_top"></div>
+                <div class="cabinet_title">
+                    輕點添加選擇, 可以重複選購滿6樣即可喔！
+                </div>
+                <div class="fruits_window" id="fruits_window">
+                    <!-- 1：幫助消化 2：活化大腦 3：保護血管 -->
+                    <div class="layer1" id="layer1">
+                        <p class="layer1Label">幫助消化</p>
+                    </div>
+                    <div class="layer2" id="layer2">
+                        <p class="layer2Label">活化大腦</p>
+                    </div>
+                    <div class="layer3" id="layer3">
+                        <p class="layer3Label">保護血管</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper_middle wow bounce">
+                <table id="selectedTable">
+                </table>
+            </div>
+
+            <div class="wrapper_right">
+                <div class="upper">
+                    <h5>
+                        <img src="./images/cusFruits/cusfruit_staricon.png"> 養生指數
+                        <img src="./images/cusFruits/cusfruit_subtitle.png">
+                    </h5>
+                    <div class="radar_wrapper">
+                        <canvas id="heyChart" width="250" height="250"></canvas>
+                    </div>
+                </div>
+                <div class="rwd_group">
+                    <div class="lower">
+                        <h5>
+                            <img src="./images/cusFruits/cusfruit_staricon.png"> 小結
+                            <img src="./images/cusFruits/cusfruit_subtitle.png">
+                        </h5>
+                        <form action="#" method="get" class="form__group field">
+                            <input type="text" name="bagname" id="bagname" class="form__field" placeholder="Name">
+                            <label for="bagname" class="form__label">為您搭配好的組合命名 : </label>
+                        </form>
+                        <div>
+                            <p>已選: <span id="items">0</span>/6樣</p>
+                            <h5>目前總金額: <span id="totalPrice">0</span>點</h5>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <a href="index.html">取消</a>
+                        <button type="submit" class="addCartBtn putin disabled" id="putin_11">放入購物車
+                            <input type="hidden" value="客製果甘|varFruits.png|360">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="newItem">
+                <div id="content">
+                    項目數量：<span id="itemCount">0</span>
+                    <br>
+                    總金額：$<span id="subtotal">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+    <div class="footer_content">
+        <strong>地址：320 桃園市中壢區中大路300號<br></strong>
+        <strong>電話：03-4257387<br></strong>
+        <strong>信箱：DD105G3@gmail.com<br></strong>
+        <strong>Copyright &copy; 2020 Natural Sweet</srong>
+            <i class="fas fa-leaf"></i>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品詳情 | 天然甘</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/shortIcon.png">
+    <!-- <link rel="stylesheet" href="./discuss.css"> -->
+    <link rel="stylesheet" href="./css/page/prod/detail.css">
+    <script src="./js/all.js"></script>
+
+</head>
+
+<body style="background-color:#B9D7EA ;">
+    <!-- ↓↓↓ 導覽列 -->
+    <script src="./js/hamburger.js"></script>
+<script src="./js/login_common.js"></script>
+<header>
+    <nav class="header__container">
+        <span class="logo">
+            <a href="home.html"><img src="./images/Logo.svg"></a>
+        </span>
+        <div class="navList">
+            <a class="navItem @@focus01" href="about.html">果甘物語 <i class="fas fa-seedling"></i></a>
+            <a class="navItem focus" href="prod_product.html">特色果甘 <i class="fas fa-apple-alt"></i></a>
+            <a class="navItem @@focus03" href="box.html">客製禮盒 <i class="fas fa-gift"></i></a>
+            <a class="navItem @@focus04" href="cusfruits.html">客製果甘 <i class="fas fa-lemon"></i></a>
+            <!-- <a class="navItem @@focus05" href="#">折扣遊戲 <i class="fas fa-carrot"></i></a> -->
+            <a class="navItem @@focus06" href="forum.php">果甘話區 <i class="fas fa-leaf"></i></a>
+        </div>
+        <div class="navList_2">
+            <input id="memNo" type="hidden" value="">
+            <a id="shopCart" class="navItem_2" href="prod_shopping.html">
+                <i class="fas fa-shopping-cart"></i><span id="a_count"></span></a>
+            <a id="memNickname" href="member.html">&nbsp;</a>
+            <!-- 會員暱稱 -->
+            <a id="spanLogin" class="navItem_2">登入</a>
+        </div>
+    </nav>
+    <nav class="rwdHeader">
+        <div class="rwdHeaderWrap">
+            <a href="home.html">
+                <img id="topLogo2" src="./images/Logo.svg">
+            </a>
+            <button class="hamburger hamburger--elastic" id="hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="rwdHamburgerMenu">
+        <nav>
+            <ul>
+                <a href="member.html">
+                    <li id="mobilememNickname">&nbsp;</li>
+                </a>
+                <a id="mobileloginLink">
+                    <li id="mobilespanLogin">登入 <i class="fas fa-user-circle"></i></li>
+                </a>
+                <a id="shopCart" href="prod_shopping.html">
+                    
+                    <li>購物車<i class="fas fa-shopping-cart"></i><span id="b_count"></span></li>
+                </a>
+                <a href="about.html">
+                    <li>果甘物語 <i class="fas fa-seedling"></i></li>
+                </a>
+                <a href="prod_product.html">
+                    <li>特色果甘 <i class="fas fa-apple-alt"></i></li>
+                </a>
+                <a href="box.html">
+                    <li>客製禮盒 <i class="fas fa-gift"></i></li>
+                </a>
+                <a href="cusfruits.html">
+                    <li>客製果甘 <i class="fas fa-lemon"></i></li>
+                </a>
+                <!-- <a href="#">
+                    <li>折扣遊戲 <i class="fas fa-carrot"></i></li>
+                </a> -->
+                <a href="forum.php">
+                    <li>果甘話區 <i class="fas fa-leaf"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <!-- ↑↑↑ 導覽列 -->
+    <div id="cloudBoard">
+
+        <ul>
+            <li>
+                <img src="images/moving_cloud.png" id="moving_cloud">
+            </li>
+
+        </ul>
+    </div>
+    <div class="box_for_title_hot_topics">
+        <div class="title_hot_topics">
+            <img src="./images/leaf_small.svg" class="leafLeft">
+            <img src="./images/leaf_small.svg" class="leafRight">
+            商品詳情
+        </div>
+    </div>
+
+    <div class="detail_wrapper">
+        <div class="prdt_img">
+            <div class="large_img">
+                <img src="images/prdt/strawberry01.png">
+            </div>
+            <table class="small_img">
+                <tr>
+                    <td><img src="images/prdt/strawberry01.png" class="sm_photo"></td>
+                    <td><img src="images/prdt/strawberry02.jpg" class="sm_photo"></td>
+                    <td><img src="images/prdt/strawberry03.jfif" class="sm_photo"></td>
+                    <td><img src="images/prdt/strawberry04.jfif" class="sm_photo"></td>
+                </tr>
+            </table>
+        </div>
+        <!--prdt_img的結尾標籤-->
+
+        <div class="prdt_text">
+            <h2><b>產品名稱：天然草莓甘</b></h2>
+            <table class="grade">
+                <tr>
+                    <td class="score">
+                        <h3 style="color:#FF5C26;text-decoration: underline;">4.0</h3>
+                    </td>
+                    <td class="stars"><img src="images/prdt/icon/four_stars.svg"></td>
+                </tr>
+            </table>
+            <p class=introduce style="line-height: 1.4;">
+                基本介紹：草莓成熟後的果實富含有糖、蛋白質、粗纖維；其中維生素A也特別高，超過了橘子、芒果；還含有礦物質、蛋白質、鈣、磷、鐵等營養成分。</p>
+            <div class="buy">
+                <h4>售價：<span class="price_label">340點</span></h4>
+                <div class="quantity">
+                    <h4>數量：</h4>
+                    <button class="count" id="minus">-</button>
+                    <div calss="amount" id="howmany">1</div>
+                    <button class="count" id="add">+</button>
+                </div>
+                <div class="purchase">
+                    <button class="game_btn for_buyit" id="putin"> 放入購物車<img
+                            src="images/prdt/icon/shopping_cart.svg"></button>
+                    <button class="game_btn for_buyit" id="buyit">直接購買</button>
+                </div>
+                <!--div.purchase的結尾標籤-->
+            </div>
+            <!--div.buy的結尾標籤-->
+        </div>
+        <!--prdt_text的結尾標籤-->
+        <hr style="margin: 30px;border-style: dashed;">
+        <div class="see_comment">
+            <h2 style="text-align: center;">觀看評價</h2>
+            <ul class="prtd_comment">
+                <li>
+                    <div>Peggy1001於 2020.02.26 23:40 發表評價：我覺得這款果甘不錯吃，有點甜，又不會太甜，下次還會再買。</div>
+                    <table class="each_comment">
+                        <tr class="each_comment">
+                            <td></td>
+                            <td class="each_star"><img src="images/prdt/icon/five_stars.svg"></td>
+                            <td class="accuse">我想檢舉這篇評論</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <div>Ted1001於 2020.02.24 08:10 發表評價：我覺得這款果甘不錯吃，但分量有點太少。</div>
+                    <table class="each_comment">
+                        <tr class="each_comment">
+                            <td></td>
+                            <td class="each_star"><img src="images/prdt/icon/three_stars.svg"></td>
+                            <td class="accuse">我想檢舉這篇評論</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <div>Eric0101於 2020.02.20 23:40 發表評價：還有客製化禮盒，這個我最喜歡的。</div>
+                    <table class="each_comment">
+                        <tr class="each_comment">
+                            <td></td>
+                            <td class="each_star"><img src="images/prdt/icon/four_stars.svg"></td>
+                            <td class="accuse">我想檢舉這篇評論</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <div>Hellen1001於 2020.02.16 13:40 發表評價：我覺得這款果甘不錯吃，有點甜，又不會太甜，下次還會再買。</div>
+                    <table class="each_comment">
+                        <tr class="each_comment">
+                            <td></td>
+                            <td class="each_star"><img src="images/prdt/icon/five_stars.svg"></td>
+                            <td class="accuse">我想檢舉這篇評論</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <div>Peggy1001於 2020.02.26 23:40 發表評價：我覺得這款果甘不錯吃，有點甜，又不會太甜，下次還會再買。</div>
+                    <table class="each_comment">
+                        <tr class="each_comment">
+                            <td></td>
+                            <td class="each_star"><img src="images/prdt/icon/five_stars.svg"></td>
+                            <td class="accuse">我想檢舉這篇評論</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <div>Ted1001於 2020.02.24 08:10 發表評價：我覺得這款果甘不錯吃，但分量有點太少。</div>
+                    <table class="each_comment">
+                        <tr class="each_comment">
+                            <td></td>
+                            <td class="each_star"><img src="images/prdt/icon/four_stars.svg"></td>
+                            <td class="accuse">我想檢舉這篇評論</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <div>Eric0101於 2020.02.20 23:40 發表評價：還有客製化禮盒，這個我最喜歡的。</div>
+                    <table class="each_comment">
+                        <tr class="each_comment">
+                            <td></td>
+                            <td class="each_star"><img src="images/prdt/icon/five_stars.svg"></td>
+                            <td class="accuse">我想檢舉這篇評論</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <div>Hellen1001於 2020.02.16 13:40 發表評價：我覺得這款果甘不錯吃，有點甜，又不會太甜，下次還會再買。</div>
+                    <table class="each_comment">
+                        <tr class="each_comment">
+                            <td></td>
+                            <td class="each_star"><img src="images/prdt/icon/five_stars.svg"></td>
+                            <td class="accuse">我想檢舉這篇評論</td>
+                        </tr>
+                    </table>
+                </li>
+
+            </ul>
+            <!--ul.prdt_comment的結尾標籤-->
+        </div>
+        <!--see_comment的結尾標籤-->
+    </div>
+    <!--detail_wrapper的結尾標籤-->
+
+</body>
+<footer>
+    <div class="footer_content">
+        <strong>地址：320 桃園市中壢區中大路300號<br></strong>
+        <strong>電話：03-4257387<br></strong>
+        <strong>信箱：DD105G3@gmail.com<br></strong>
+        <strong>Copyright &copy; 2020 Natural Sweet</srong>
+            <i class="fas fa-leaf"></i>
+    </div>
+</footer>
+
+</html>

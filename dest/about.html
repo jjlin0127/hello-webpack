@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>果甘物語 | 天然甘</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/shortIcon.png">
+    <link rel="stylesheet" href="./css/page/about/about.css">
+    
+</head>
+
+<body>
+    <script src="./js/hamburger.js"></script>
+<script src="./js/login_common.js"></script>
+<header>
+    <nav class="header__container">
+        <span class="logo">
+            <a href="home.html"><img src="./images/Logo.svg"></a>
+        </span>
+        <div class="navList">
+            <a class="navItem focus" href="about.html">果甘物語 <i class="fas fa-seedling"></i></a>
+            <a class="navItem @@focus02" href="prod_product.html">特色果甘 <i class="fas fa-apple-alt"></i></a>
+            <a class="navItem @@focus03" href="box.html">客製禮盒 <i class="fas fa-gift"></i></a>
+            <a class="navItem @@focus04" href="cusfruits.html">客製果甘 <i class="fas fa-lemon"></i></a>
+            <!-- <a class="navItem @@focus05" href="#">折扣遊戲 <i class="fas fa-carrot"></i></a> -->
+            <a class="navItem @@focus06" href="forum.php">果甘話區 <i class="fas fa-leaf"></i></a>
+        </div>
+        <div class="navList_2">
+            <input id="memNo" type="hidden" value="">
+            <a id="shopCart" class="navItem_2" href="prod_shopping.html">
+                <i class="fas fa-shopping-cart"></i><span id="a_count"></span></a>
+            <a id="memNickname" href="member.html">&nbsp;</a>
+            <!-- 會員暱稱 -->
+            <a id="spanLogin" class="navItem_2">登入</a>
+        </div>
+    </nav>
+    <nav class="rwdHeader">
+        <div class="rwdHeaderWrap">
+            <a href="home.html">
+                <img id="topLogo2" src="./images/Logo.svg">
+            </a>
+            <button class="hamburger hamburger--elastic" id="hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="rwdHamburgerMenu">
+        <nav>
+            <ul>
+                <a href="member.html">
+                    <li id="mobilememNickname">&nbsp;</li>
+                </a>
+                <a id="mobileloginLink">
+                    <li id="mobilespanLogin">登入 <i class="fas fa-user-circle"></i></li>
+                </a>
+                <a id="shopCart" href="prod_shopping.html">
+                    
+                    <li>購物車<i class="fas fa-shopping-cart"></i><span id="b_count"></span></li>
+                </a>
+                <a href="about.html">
+                    <li>果甘物語 <i class="fas fa-seedling"></i></li>
+                </a>
+                <a href="prod_product.html">
+                    <li>特色果甘 <i class="fas fa-apple-alt"></i></li>
+                </a>
+                <a href="box.html">
+                    <li>客製禮盒 <i class="fas fa-gift"></i></li>
+                </a>
+                <a href="cusfruits.html">
+                    <li>客製果甘 <i class="fas fa-lemon"></i></li>
+                </a>
+                <!-- <a href="#">
+                    <li>折扣遊戲 <i class="fas fa-carrot"></i></li>
+                </a> -->
+                <a href="forum.php">
+                    <li>果甘話區 <i class="fas fa-leaf"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <div class="wrapper" id="js-wrapper">
+        <img class="Tao" src="./images/about/smile.svg" alt="">
+
+        <div class="mall_scroll">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </div>
+
+        <div class="sections" id="js-slideContainer">
+            <section class="section">
+                <img class="cloud1" src="./images/about/cloud1.svg" alt="" width="20%">
+                <img class="cloud2" src="./images/about/cloud2.svg" alt="" width="20%">
+                <div class="section_2">
+                    <img class="ball" src="./images/about/ball.svg" alt="" width="60%">
+                    <span class="section__title" id="title1">品牌緣起</span>
+
+                    <p>「天然甘」展現了台灣豐富水果多樣性，
+                        堅持用最天然的方式來呈現出水果最健康的美味，
+                        秉持著讓消費者可以吃的安心的初衷，
+                        我們堅持著理念，友善栽培果甘禮盒，
+                        做著自己可以引以為傲的天然水果甘。</p>
+                </div>
+                <span id="trigger--title1"></span>
+                <div class="fruit_land">
+                    <img class="fruits" src="./images/about/fruits.svg" alt="" width="15%">
+                    <img class="land" src="./images/about/Land.svg" alt="" width="50%">
+                </div>
+
+                
+            </section>
+            <section class="section">
+                <img class="cloud1" src="./images/about/cloud1.svg" alt="" width="20%">
+                <img class="cloud2" src="./images/about/cloud2.svg" alt="" width="20%">
+
+                <div class="section_2">
+                    <span class="section__title" id="title2">製造流程</span>
+                    <p>從產地摘取新鮮的水果，經過清洗過後，再把水果去皮細切成片，放進工廠裡的烤箱烘製完成。</p>
+                    <span id="trigger--title2"></span>
+                </div>
+
+                <div class="windCloud_windRotate">
+                    <img class="apple_1" src="./images/about/apple_1.svg" alt="" width="3%">
+                    <img class="appleTree" src="./images/about/apple.svg" alt="" width="70%">
+                    <img class="windRotate" src="./images/about/windRotate.png" alt="" width="20%">
+                </div>
+            </section>
+            <section class="section">
+                <img class="cloud1" src="./images/about/cloud1.svg" alt="" width="20%">
+                <img class="cloud2" src="./images/about/cloud2.svg" alt="" width="20%">
+                <div class="section_2">
+                    <span class="section__title" id="title3">品牌理念</span>
+                    <p> 希望能幫助台灣小農把滯銷盛產的水果做成果甘並且容易保存，
+                        除了內需市場也可以新鮮空運外銷到全世界各地，
+                        讓全世界的朋友能夠享用台灣製作的天然水果甘。</p>
+                    <span id="trigger--title3"></span>
+
+                </div>
+
+                <img class="world" src="./images/about/world360.svg" alt="" width="55%">
+
+            </section>
+            <section class="section">
+                <img class="cloud1" src="./images/about/cloud1.svg" alt="" width="20%">
+                <img class="cloud2" src="./images/about/cloud2.svg" alt="" width="20%">
+
+                <div class="section_2">
+                    <img class="ball" src="./images/about/airplane_c.svg" alt="" width="60%">
+                    <span class="section__title" id="title1">天然原味</span>
+
+                    <p>天然甘也能夠與其他點心搭配食用，例如果汁果茶等，讓您更健康，堅持將最天然的果甘送到消費者手上，
+                        讓家家戶戶都能夠享用最棒的天然甘</p>
+                </div>
+                <span id="trigger--title1"></span>
+                <div class="fruit_land">
+
+                    <img class="land" src="./images/about/earth.svg" alt="" width="40%">
+                </div>
+
+
+
+
+
+
+
+
+
+            </section>
+            <!-- <section class="section">
+                <span class="section__title" id="title5">Section Five</span>
+                <span id="trigger--title5"></span>
+                
+            </section> -->
+            
+
+            <div class="clearfix"></div>
+
+        </div>
+       
+    </div>
+    
+
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/all.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/animation.gsap.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/debug.addIndicators.min.js'></script>
+    <script src="./js/about.js"></script>
+   
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>果甘話區話題 | 天然甘</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/shortIcon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/page/forum/forum_article.css">
+<body>
+    <script src="./js/hamburger.js"></script>
+<script src="./js/login_common.js"></script>
+<header>
+    <nav class="header__container">
+        <span class="logo">
+            <a href="home.html"><img src="./images/Logo.svg"></a>
+        </span>
+        <div class="navList">
+            <a class="navItem @@focus01" href="about.html">果甘物語 <i class="fas fa-seedling"></i></a>
+            <a class="navItem @@focus02" href="prod_product.html">特色果甘 <i class="fas fa-apple-alt"></i></a>
+            <a class="navItem @@focus03" href="box.html">客製禮盒 <i class="fas fa-gift"></i></a>
+            <a class="navItem @@focus04" href="cusfruits.html">客製果甘 <i class="fas fa-lemon"></i></a>
+            <!-- <a class="navItem @@focus05" href="#">折扣遊戲 <i class="fas fa-carrot"></i></a> -->
+            <a class="navItem focus" href="forum.php">果甘話區 <i class="fas fa-leaf"></i></a>
+        </div>
+        <div class="navList_2">
+            <input id="memNo" type="hidden" value="">
+            <a id="shopCart" class="navItem_2" href="prod_shopping.html">
+                <i class="fas fa-shopping-cart"></i><span id="a_count"></span></a>
+            <a id="memNickname" href="member.html">&nbsp;</a>
+            <!-- 會員暱稱 -->
+            <a id="spanLogin" class="navItem_2">登入</a>
+        </div>
+    </nav>
+    <nav class="rwdHeader">
+        <div class="rwdHeaderWrap">
+            <a href="home.html">
+                <img id="topLogo2" src="./images/Logo.svg">
+            </a>
+            <button class="hamburger hamburger--elastic" id="hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="rwdHamburgerMenu">
+        <nav>
+            <ul>
+                <a href="member.html">
+                    <li id="mobilememNickname">&nbsp;</li>
+                </a>
+                <a id="mobileloginLink">
+                    <li id="mobilespanLogin">登入 <i class="fas fa-user-circle"></i></li>
+                </a>
+                <a id="shopCart" href="prod_shopping.html">
+                    
+                    <li>購物車<i class="fas fa-shopping-cart"></i><span id="b_count"></span></li>
+                </a>
+                <a href="about.html">
+                    <li>果甘物語 <i class="fas fa-seedling"></i></li>
+                </a>
+                <a href="prod_product.html">
+                    <li>特色果甘 <i class="fas fa-apple-alt"></i></li>
+                </a>
+                <a href="box.html">
+                    <li>客製禮盒 <i class="fas fa-gift"></i></li>
+                </a>
+                <a href="cusfruits.html">
+                    <li>客製果甘 <i class="fas fa-lemon"></i></li>
+                </a>
+                <!-- <a href="#">
+                    <li>折扣遊戲 <i class="fas fa-carrot"></i></li>
+                </a> -->
+                <a href="forum.php">
+                    <li>果甘話區 <i class="fas fa-leaf"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper_article">
+        <div class="article_container">
+            <div class="article_area">
+                <a href="forum.html" id="back_btn"></a>
+                <div class="post post1">
+                    <div class="author">
+                        <div class="author_img">
+                            <img src="./images/forum/head_shot/mwyqpL.jpg" alt="">
+                        </div>
+                        <p class="author_name">某人</p>
+                    </div>
+                    <p class="post_title">無加糖紅肉火龍果乾</p>
+                    <div class="post_topic post_topic1">
+                        <img src="./images/forum/circled1.jpg">
+                        <span class="topic1">幫助消化</span>
+                        <span class="post_time">2020-02-22 15:45:00</span>
+                    </div>
+                    <p class="post_content">紅肉火龍果，
+                        特有的紅色果肉，
+                        含有一般植物少有的植物性「白蛋白」及花青素，
+                        維生素C的含量也較其他蔬果來得豐富，是台灣普遍喜愛的水果之一。
+                        
+                        幸福的無加糖火龍果乾，
+                        選用臺灣的紅肉火龍果下去低溫烘製而成，
+                        除了吃的到火龍果濃郁的香、水果原本的甜與農民的愛之外，
+                        更吃的到我們的用心，適合喜愛自然原味的您。
+                    </p>
+                    <div class="post_hashtag post1_hashtag">
+                        <span class="fruit_kind fruit_kind1">楊桃</span>
+                        <span class="fruit_kind fruit_kind1">鳳梨</span>
+                        <span class="fruit_kind fruit_kind2">香蕉</span>
+                        <span class="fruit_kind fruit_kind2">草莓</span>
+                        <span class="fruit_kind fruit_kind3">芒果</span>
+                        <span class="fruit_kind fruit_kind3">蘋果</span>
+                    </div>
+                    <div class="social_zone">
+                        <div class="likeAndComment">
+                            <i class="fas fa-heart"></i>
+                            <p class="like_count">10</p>
+                            <i class="fas fa-comment"></i>
+                            <p class="comment_count">2</p>
+                        </div>
+                        <div class="favoriteAndReport">
+                            <div class="postfunc like">
+                                <i class="socialBtns likeBtns"></i>
+                                <span class="tooltiptext">愛心</span>
+                            </div>
+                            <div class="postfunc favorite">
+                                <i class="socialBtns favoriteBtns"></i>
+                                <span class="tooltiptext">收藏</span>
+                            </div>
+                            <div class="postfunc subscript">
+                                <i class="socialBtns subscriptBtns"></i>
+                                <span class="tooltiptext">訂閱</span>
+                            </div>
+                            <div class="postfunc report">
+                                <i class="reportBtns"></i>
+                                <span class="tooltiptext">檢舉</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments_area">
+                    <p>話題留言</p>
+                    <div class="comment comment1">
+                        <div class="author">
+                            <div class="author_img">
+                                <img src="./images/forum/head_shot/twuPTC.jpg" alt="">
+                            </div>
+                            <p class="author_name">某人<span class="comment_time">2020-02-22 15:45:00</span></p>
+                        </div>                    
+                        <p class="comment_content"> 
+                            幸福的無加糖火龍果乾，
+                            選用臺灣的紅肉火龍果下去低溫烘製而成，
+                            除了吃的到火龍果濃郁的香、水果原本的甜與農民的愛之外，
+                            更吃的到我們的用心，適合喜愛自然原味的您。
+                        </p>
+                        <div class="social_zone">
+                            <div class="likeAndComment">
+                                <i class="fas fa-heart"></i>
+                                <p class="like_count">7</p>
+                            </div>
+                            <div class="favoriteAndReport">
+                                <div class="postfunc like">
+                                    <i class="socialBtns likeBtns"></i>
+                                    <span class="tooltiptext">愛心</span>
+                                </div>
+                                <div class="postfunc report">
+                                    <i class="reportBtns"></i>
+                                    <span class="tooltiptext">檢舉</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment comment2">
+                        <div class="author">
+                            <div class="author_img">
+                                <img src="./images/forum/head_shot/ZmPb3D.jpg" alt="">
+                            </div>
+                            <p class="author_name">某人某人某人某人某人<span class="comment_time">2020-02-22 15:45:00</span></p>
+                        </div>                    
+                        <p class="comment_content"> 
+                            幸福的無加糖火龍果乾，
+                            選用臺灣的紅肉火龍果下去低溫烘製而成，
+                            除了吃的到火龍果濃郁的香、水果原本的甜與農民的愛之外，
+                            更吃的到我們的用心，適合喜愛自然原味的您。
+                        </p>
+                        <div class="social_zone">
+                            <div class="likeAndComment">
+                                <i class="fas fa-heart"></i>
+                                <p class="like_count">9</p>
+                            </div>
+                            <div class="favoriteAndReport">
+                                <div class="postfunc like">
+                                    <i class="socialBtns likeBtns"></i>
+                                    <span class="tooltiptext">愛心</span>
+                                </div>
+                                <div class="postfunc report">
+                                    <i class="reportBtns"></i>
+                                    <span class="tooltiptext">檢舉</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment_zone">
+                        <!-- <p>我要留言</p> -->
+                        <form method="post" action="" class="comment_form">
+                            <textarea name="" id="" maxlength="350" placeholder="最多輸入300個字"></textarea>
+                            <div class="comment_btns">
+                                <button type="submit" class="comment_submit_btn">發表留言</button>
+                                <button type="reset" class="comment_reset_btn">清除重填</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- alert start -->
+        <div id="alertBox" class="alertBox hidden">
+            <span id="close_alert_btn">&times;</span>
+            <span id="alertMessage"></span>
+          </div>
+        <!-- alert end -->
+
+        <!-- report popbox start -->
+        <div id="reportBox" class="reportBox hidden">
+            <form method="post" action="">
+                <h5>檢舉原因</h5>
+                <div class="options_set set_report_reasons"> 
+                    <div class="option">
+                        <input type="radio" name="set_report_reason" id="abuse">
+                        <label for="abuse">中傷、歧視或謾罵他人</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="set_report_reason" id="spamming">
+                        <label for="spamming">惡意洗版、重複張貼</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="set_report_reason" id="intense">
+                        <label for="intense">含色情、血腥或暴力等內容</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="set_report_reason" id="other">
+                        <label for="other">其他原因</label>
+                    </div>
+                    <div class="reportBox_btns">
+                        <button type="submit" id="submit_report_btn">送出</button>
+                        <span id="cancel_report_btn">取消</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- popbox end -->
+    </div>
+    <footer>
+    <div class="footer_content">
+        <strong>地址：320 桃園市中壢區中大路300號<br></strong>
+        <strong>電話：03-4257387<br></strong>
+        <strong>信箱：DD105G3@gmail.com<br></strong>
+        <strong>Copyright &copy; 2020 Natural Sweet</srong>
+            <i class="fas fa-leaf"></i>
+    </div>
+</footer> 
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/vendor/all.js"></script>
+    <script src="./js/forum/forum_article.js"></script>
+</body>
+</html>

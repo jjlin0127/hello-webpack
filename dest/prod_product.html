@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>特色果甘 | 天然甘</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/shortIcon.png">
+    <link rel="stylesheet" href="./css/page/prod/product.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>		
+    <!-- ↓↓↓banner輪播圖的js -->
+    <script src="./js/prod_carousel.js"></script>
+    <!-- <script src="./js/shopping_cart01_1.js"></script> -->
+    <script src="./js/shopping_cart01.js"></script>
+</head>
+
+<body>
+    <script src="./js/hamburger.js"></script>
+<script src="./js/login_common.js"></script>
+<header>
+    <nav class="header__container">
+        <span class="logo">
+            <a href="home.html"><img src="./images/Logo.svg"></a>
+        </span>
+        <div class="navList">
+            <a class="navItem @@focus01" href="about.html">果甘物語 <i class="fas fa-seedling"></i></a>
+            <a class="navItem focus" href="prod_product.html">特色果甘 <i class="fas fa-apple-alt"></i></a>
+            <a class="navItem @@focus03" href="box.html">客製禮盒 <i class="fas fa-gift"></i></a>
+            <a class="navItem @@focus04" href="cusfruits.html">客製果甘 <i class="fas fa-lemon"></i></a>
+            <!-- <a class="navItem @@focus05" href="#">折扣遊戲 <i class="fas fa-carrot"></i></a> -->
+            <a class="navItem @@focus06" href="forum.php">果甘話區 <i class="fas fa-leaf"></i></a>
+        </div>
+        <div class="navList_2">
+            <input id="memNo" type="hidden" value="">
+            <a id="shopCart" class="navItem_2" href="prod_shopping.html">
+                <i class="fas fa-shopping-cart"></i><span id="a_count"></span></a>
+            <a id="memNickname" href="member.html">&nbsp;</a>
+            <!-- 會員暱稱 -->
+            <a id="spanLogin" class="navItem_2">登入</a>
+        </div>
+    </nav>
+    <nav class="rwdHeader">
+        <div class="rwdHeaderWrap">
+            <a href="home.html">
+                <img id="topLogo2" src="./images/Logo.svg">
+            </a>
+            <button class="hamburger hamburger--elastic" id="hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="rwdHamburgerMenu">
+        <nav>
+            <ul>
+                <a href="member.html">
+                    <li id="mobilememNickname">&nbsp;</li>
+                </a>
+                <a id="mobileloginLink">
+                    <li id="mobilespanLogin">登入 <i class="fas fa-user-circle"></i></li>
+                </a>
+                <a id="shopCart" href="prod_shopping.html">
+                    
+                    <li>購物車<i class="fas fa-shopping-cart"></i><span id="b_count"></span></li>
+                </a>
+                <a href="about.html">
+                    <li>果甘物語 <i class="fas fa-seedling"></i></li>
+                </a>
+                <a href="prod_product.html">
+                    <li>特色果甘 <i class="fas fa-apple-alt"></i></li>
+                </a>
+                <a href="box.html">
+                    <li>客製禮盒 <i class="fas fa-gift"></i></li>
+                </a>
+                <a href="cusfruits.html">
+                    <li>客製果甘 <i class="fas fa-lemon"></i></li>
+                </a>
+                <!-- <a href="#">
+                    <li>折扣遊戲 <i class="fas fa-carrot"></i></li>
+                </a> -->
+                <a href="forum.php">
+                    <li>果甘話區 <i class="fas fa-leaf"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <!-- ↑↑↑ 導覽列 -->
+    <div class="wrapper">
+        <center><div class="box_for_title_hot_topics">
+            <div class="title_hot_topics">
+                <img src="./images/index/leaf6.svg" class="leafLeft">
+                <img src="./images/index/leaf5.svg" class="leafRight">
+                <h2>特色果甘</h2>
+            </div>      
+        </div></center>
+    <!-- 以下是輪播圖 -->
+        <div id="prod_carousel">
+            <ul id="content">
+                <li><img src="./images/prdt/carousel_bgyellow.jpg" class="carousel"></li>
+				<li><img src="./images/prdt/carousel_blood.jpg" class="carousel"></li>
+				<li><img src="./images/prdt/carousel_brain.jpg" class="carousel"></li>
+                <li><img src="./images/prdt/carousel_stomach.jpg" class="carousel"></li>
+			</ul>
+			<ul id="contentButton">
+			</ul>
+        </div>
+    <!-- 以上是輪播圖 -->
+        <!-- <h3 class="under_carousel">不知道自己適合吃哪種果甘嗎？別擔心！可以點擊下方黃色按鈕，讓心理測驗建議您。</h3>
+        <center><button class="link_btn">心理測驗</button></center> -->
+        <div style="height:10px;"></div>
+    </div>   <!--div.wrapper的結尾標籤-->
+    <h3 style="text-align: center;">把滑鼠移到圖片上方，就可以看到果甘的營養價值</h3>
+
+    <!-- <a href="./prod_shopping.html">察看購物車</a> -->
+    <ul class="wrapper_cards">
+
+        <a href="prod_detail.php?prodNo=1">
+        <li class="cards">
+            <div class="fresh_fruit">
+                <img src="images/prdt/freshstarfruit_nobg.png" class="fresh_fruit">
+                <div class="dry_fruit">
+                    <img src="images/prdt/starfruit.png" class="dried_fruit">
+                </div>
+                <!-- 3月22日(日)新增className內容 -->
+                <div class="pic_rada for_stomach" >
+                    <!-- 3月22日(日)底下的內容 -->
+                    <h4>幫助消化</h4>
+                    <p>楊桃富含豐富的檸檬酸、草酸、蘋果酸等元素能有效的提高胃液的酸度，從而快速促進食物的消化已達到和健胃消食的作用。胸悶欲嘔、消化不良、腹脹打嗝，只要多吃楊桃，症狀便能逐漸減輕。		    </p>
+                    <!-- <img src="images/prdt/rada.jfif" class="rada"> -->
+                </div>
+
+            </div>
+            <div class="text_oncard">
+                <h5>天然楊桃甘</h5>
+                <br>
+                <h5>價格：360點</h5>
+                <br>
+        </a>
+                <h5>
+                    <button class="green_btn shopping_cart_btn putin" id="putin_1">
+                    放入購物車
+                    <input type="hidden" value="天然楊桃甘|01_starFruit_c.png|360">
+                    </button>
+                    <label for="putin_1"><img src="images/prdt/icon/shopping_cart.svg" class="icon"></label>
+                </h5>
+
+            </div> <!--div.text_oncard的指令-->
+        </li> <!--div.cards的結尾標籤-->
+
+        <a href="prod_detail.php?prodNo=2">
+        <li class="cards">
+            <div class="fresh_fruit">
+                <img src="images/prdt/freshpineapple_nobg.png" class="fresh_fruit">
+                <div class="dry_fruit">
+                    <img src="images/prdt/pineapple_nobg.png" class="dried_fruit">
+                </div>
+                <!-- 3月22日(日)新增className內容 -->
+                <div class="pic_rada for_stomach" >
+                    <!-- 3月22日(日)底下的內容 -->
+                    <h4>幫助消化</h4>
+                    <p>含有大部分人體中所需的維生素、礦物質，能有效幫助消化吸收，此外，鳳梨中的鳳梨酵素，能有效分解食物蛋白質，促進腸胃蠕動，幫助排便。</p>
+                    <!-- <img src="images/prdt/rada.jfif" class="rada"> -->
+                </div>
+
+            </div>
+            <div class="text_oncard" style="margin-top: 20px;">
+                <h5>天然鳳梨甘</h5>
+                <br>
+                <h5>價格：360點</h5>
+                <br>
+        </a>
+                <h5>
+                    <button class="green_btn shopping_cart_btn putin" id="putin_2"> 
+                        放入購物車
+                        <input type="hidden" value="天然鳳梨甘|02_pineapple_c.png|360">
+                    </button>
+                    <label for="putin_2"><img src="images/prdt/icon/shopping_cart.svg" class="icon"></label>
+                </h5>
+            </div> <!--div.text_oncard的指令-->
+        </li> <!--div.cards的結尾標籤-->
+
+        <a href="prod_detail.php?prodNo=3">
+        <li class="cards">
+            <div class="fresh_fruit">
+                <img src="images/prdt/freshdragon_nobg.png" class="fresh_fruit">
+                <div class="dry_fruit">
+                    <img src="images/prdt/dragon.png" class="dried_fruit">
+                </div>
+                <!-- <div class="pic_rada" >
+                    <img src="images/prdt/rada.jfif" class="rada">
+                </div> -->
+                <!-- 3月22日(日)新增className內容 -->
+                <div class="pic_rada for_stomach" >
+                    <!-- 3月22日(日)底下的內容 -->
+                    <h4>幫助消化</h4>
+                    <p>除了擁有豐富的纖維、果膠外，更含有豐富的維生A、C、B1、B2及胡蘿蔔素等營養成分，這些營養素有助於潤腸通便，只是，這種天然色素的水果，會使得排泄物變色，所以，民眾若是吃火龍果露出現紅色的排泄物時，不要過於緊張，這屬於正常現象。</p>
+                    <!-- <img src="images/prdt/rada.jfif" class="rada"> -->
+                </div>
+            </div>
+            <div class="text_oncard" style="margin-top: 20px;">
+                <h5>天然火龍果甘</h5>
+                <br>
+                <h5>價格：360點</h5>
+                <br>
+        </a>
+                <h5>
+                    <button class="green_btn shopping_cart_btn putin" id="putin_3"> 
+                        放入購物車
+                        <input type="hidden" value="天然火龍果甘|03_dragon_c.png|360">
+                    </button>
+                    <img src="images/prdt/icon/shopping_cart.svg" class="icon">
+                </h5>
+                <!-- <center>
+                    <button class="orange_btn buyit">直接購買</button>
+                    <img src="images/prdt/icon/icon_money.svg" class="icon">
+                </center> -->
+            </div> <!--div.text_oncard的指令-->
+        </li> <!--li.cards的結尾標籤-->
+
+        <a href="prod_detail.php?prodNo=4">
+        <li class="cards">
+            <div class="fresh_fruit">
+                <img src="images/prdt/freshbanana_nobg.png" class="fresh_fruit">
+                <div class="dry_fruit">
+                    <img src="images/prdt/banana.png" class="dried_fruit">
+                </div>
+                <!-- 3月22日(日)新增className內容 -->
+                <div class="pic_rada for_blood" >
+                    <!-- 3月22日(日)底下的內容 -->
+                    <h4>保護血管</h4>
+                    <p>有研究指出香蕉能有效降低腦部血管阻塞風險。研究回顧了從60年代開始的11個文獻後指出，每天三餐各吃一根香蕉，可有效降低腦部血管阻塞風險達21％。</p>
+                    <!-- <img src="images/prdt/rada.jfif" class="rada"> -->
+                </div>
+            </div>
+            <div class="text_oncard" style="margin-top: 20px;">
+                <h5>天然香蕉甘</h5>
+                <br>
+                <h5>價格：360點</h5>
+                <br>
+            </a>
+                <h5>
+                    <button class="green_btn shopping_cart_btn putin" id="putin_4"> 
+                        放入購物車
+                        <input type="hidden" value="天然香蕉甘|04_banana_c.png|360">
+                    </button>
+                    <img src="images/prdt/icon/shopping_cart.svg" class="icon">
+                </h5>
+            </div> <!--div.text_oncard的指令-->
+        </li> <!--div.cards的結尾標籤-->
+
+        <a href="prod_detail.php?prodNo=5">
+        <li class="cards">
+            <div class="fresh_fruit">
+                <img src="images/prdt/freshstrawberry_nobg.png" class="fresh_fruit">
+                <div class="dry_fruit">
+                    <img src="images/prdt/strawberry1.png" class="dried_fruit" >
+                </div>
+                <!-- 3月22日(日)新增className內容 -->
+                <div class="pic_rada for_blood" >
+                    <!-- 3月22日(日)底下的內容 -->
+                    <h4>保護血管</h4>
+                    <p>根據有關研究，草莓所含的植物素，能夠防止低密度脂蛋白膽固醇的氧化，提升血管功能，避免血液不通。所以，吃適量的草莓能夠預防動脈硬化、高血壓、冠心病等心血管疾病。</p>
+                    <!-- <img src="images/prdt/rada.jfif" class="rada"> -->
+                </div>
+            </div>
+            <div class="text_oncard" style="margin-top: 20px;">
+                <h5 class="name">天然草莓甘</h5>
+                <br>
+                <h5 class="price">價格：360點</h5>
+                <br>
+        </a>
+                <h5>
+                    <button class="green_btn shopping_cart_btn putin" id="putin_5"> 
+                        放入購物車
+                        <input type="hidden" value="天然草莓甘|05_stawberry_c.png|360">
+                    </button>
+                    <img src="images/prdt/icon/shopping_cart.svg" class="icon">
+                <h5>
+            </div> <!--div.text_oncard的指令-->
+        </li> <!--div.cards的結尾標籤-->
+
+        <a href="prod_detail.php?prodNo=6">
+        <li class="cards">
+            <div class="fresh_fruit">
+                <img src="images/prdt/freshguava_nobg.png" class="fresh_fruit">
+                <div class="dry_fruit">
+                    <img src="images/prdt/guava.png" class="dried_fruit">
+                </div>
+                <!-- <div class="pic_rada" >
+                    <img src="images/prdt/rada.jfif" class="rada">
+                </div> -->
+                <!-- 3月22日(日)新增className內容 -->
+                <div class="pic_rada for_blood" >
+                    <!-- 3月22日(日)底下的內容 -->
+                    <h4>保護血管</h4>
+                    <p>芭樂中含有多酚，多酚中的類黃酮素，包含常聽到的兒茶素、槲皮素、前花青素、木犀草素等抗氧化元素。這些元素可以幫助清除血液中多餘的低密度膽固醇（壞膽固醇），預防血栓形成。</p>
+                    <!-- <img src="images/prdt/rada.jfif" class="rada"> -->
+                </div>
+                
+            </div>
+            <div class="text_oncard" style="margin-top: 20px;">
+                <h5>天然芭樂甘</h5>
+                <br>
+                <h5>價格：360點</h5>
+                <br>
+        </a>
+                <h5>
+                    <button class="green_btn shopping_cart_btn putin" id="putin_6"> 
+                        放入購物車
+                        <input type="hidden" value="天然芭樂甘|06_guava_c.png|360">
+                    </button>
+                    <img src="images/prdt/icon/shopping_cart.svg" class="icon">
+                </h5>
+            </div> <!--div.text_oncard的指令-->
+        </li> <!--div.cards的結尾標籤-->
+
+        <a href="prod_detail.php?prodNo=7">
+        <li class="cards">
+            <div class="fresh_fruit">
+                <img src="images/prdt/freshmango_nobg.png" class="fresh_fruit">
+                <div class="dry_fruit">
+                    <img src="images/prdt/mango_nobg.png" class="dried_fruit">
+                </div>
+                <!-- 3月22日(日)新增className內容 -->
+                <div class="pic_rada for_brain" >
+                    <!-- 3月22日(日)底下的內容 -->
+                    <h4>活化大腦</h4>
+                    <p>芒果富含維生素B6，它對神經系統和大腦的正常運作十分重要。芒果還含有谷氨醯胺，有助於提高人的專注度，並改善記憶。</p>
+                    <!-- <img src="images/prdt/rada.jfif" class="rada"> -->
+                </div>
+            </div>
+            <div class="text_oncard" style="margin-top: 20px;">
+                <h5>天然芒果甘</h5>
+                <br>
+                <h5>價格：360點</h5>
+                <br>
+        </a>
+                <h5>
+                    <button class="green_btn shopping_cart_btn putin" id="putin_7"> 
+                        放入購物車
+                        <input type="hidden" value="天然芒果甘|07_mango_c.png|360">
+                    </button>
+                    <img src="images/prdt/icon/shopping_cart.svg" class="icon">
+                </h5>
+            </div>
+        </li> <!--div.cards的結尾標籤-->
+
+        <a href="prod_detail.php?prodNo=8">
+        <li class="cards">
+            <div class="fresh_fruit">
+                <img src="images/prdt/freshapple_nobg.png" class="fresh_fruit">
+                <div class="dry_fruit">
+                    <img src="images/prdt/apple.png" class="dried_fruit">
+                </div>
+                <!-- 3月22日(日)新增className內容 -->
+                <div class="pic_rada for_brain">
+                    <!-- 3月22日(日)底下的內容 -->
+                    <h4>活化大腦</h4>
+                    <p>蘋果具有健腦的作用，能夠延緩大腦的衰老速度，並且能有效改善失眠的狀況，蘋果中含有的微量元素能起到緩解便秘，多吃蘋果可以健腦，對大腦有好處，同時有利於心臟的保健。</p>
+                    <!-- <img src="images/prdt/rada.jfif" class="rada"> -->
+                </div>
+
+            </div>
+            <div class="text_oncard" style="margin-top: 20px;">
+                <h5>天然蘋果甘</h5>
+                <br>
+                <h5>價格：360點</h5>   
+                <br>
+        </a>             
+                <h5>
+                    <button class="green_btn shopping_cart_btn putin" id="putin_8"> 
+                        放入購物車
+                        <input type="hidden" value="天然蘋果甘|08_apple_c.png|360">
+                    </button>
+                    <img src="images/prdt/icon/shopping_cart.svg" class="icon">
+                </h5>
+            </div> <!--div.text_oncard的指令-->
+        </li> <!--div.cards的結尾標籤-->
+
+        <a href="prod_detail.php?prodNo=9">
+        <li class="cards">
+            <div class="fresh_fruit">
+                <img src="images/prdt/freshblueberry_nobg.png" class="fresh_fruit">
+                <div class="dry_fruit">
+                    <img src="images/prdt/blueberry.png" class="dried_fruit">
+                </div>
+                <!-- 3月22日(日)新增className內容 -->
+                <div class="pic_rada for_brain" >
+                    <!-- 3月22日(日)底下的內容 -->
+                    <h4>活化大腦</h4>
+                    <p>藍莓富含的花青素和總類黃酮等成分，能修復受損的認知能力。隨著年齡的增長，人們的認知功能會逐漸退化，年長者甚至會出現記憶力和語言能力衰退的現象。為了預防老年癡呆症，藍莓是個不錯的選擇。</p>
+                    <!-- <img src="images/prdt/rada.jfif" class="rada"> -->
+                </div>
+            </div>
+            <div class="text_oncard" style="margin-top: 20px;">
+                <h5>天然藍莓甘</h5>
+                <br>
+                <h5>價格：360點</h5>
+                <br>
+        </a>
+                <h5>
+                    <button class="green_btn shopping_cart_btn putin" id="putin_9"> 
+                        放入購物車
+                        <input type="hidden" value="天然藍莓甘|09_blueberry_c.png|360">
+                    </button>
+                    <img src="images/prdt/icon/shopping_cart.svg" class="icon">
+                </h5>
+            </div> <!--div.text_oncard的指令-->
+        </li> <!--div.cards的結尾標籤-->
+
+    </ul>  <!--div.wrapper_cards的結尾標籤-->
+    <h3 class="align_center">想要製作一個專屬於自己的禮盒嗎？那就點選下方的黃色按鈕吧！
+        <br>
+        <button class="link_btn" onclick="javascript:location.href='./box.html'">客製禮盒</button>
+    </h3>
+    <div id="newItem" style="visibility: hidden;">
+        <div id="content">
+            項目數量：<span id="itemCount">&nbsp;</span>
+            <br>
+            累計點數：<span id="subtotal">&nbsp;</span>
+        </div>
+    </div>
+</body>
+    <footer>
+    <div class="footer_content">
+        <strong>地址：320 桃園市中壢區中大路300號<br></strong>
+        <strong>電話：03-4257387<br></strong>
+        <strong>信箱：DD105G3@gmail.com<br></strong>
+        <strong>Copyright &copy; 2020 Natural Sweet</srong>
+            <i class="fas fa-leaf"></i>
+    </div>
+</footer>
+</html>

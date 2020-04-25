@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>發表話題 | 天然甘</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/shortIcon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/vendor/summernote-lite.min.css">
+    <link rel="stylesheet" href="./css/page/forum/forum_post.css">
+</head>
+<body>
+    <script src="./js/hamburger.js"></script>
+<script src="./js/login_common.js"></script>
+<header>
+    <nav class="header__container">
+        <span class="logo">
+            <a href="home.html"><img src="./images/Logo.svg"></a>
+        </span>
+        <div class="navList">
+            <a class="navItem @@focus01" href="about.html">果甘物語 <i class="fas fa-seedling"></i></a>
+            <a class="navItem @@focus02" href="prod_product.html">特色果甘 <i class="fas fa-apple-alt"></i></a>
+            <a class="navItem @@focus03" href="box.html">客製禮盒 <i class="fas fa-gift"></i></a>
+            <a class="navItem @@focus04" href="cusfruits.html">客製果甘 <i class="fas fa-lemon"></i></a>
+            <!-- <a class="navItem @@focus05" href="#">折扣遊戲 <i class="fas fa-carrot"></i></a> -->
+            <a class="navItem focus" href="forum.php">果甘話區 <i class="fas fa-leaf"></i></a>
+        </div>
+        <div class="navList_2">
+            <input id="memNo" type="hidden" value="">
+            <a id="shopCart" class="navItem_2" href="prod_shopping.html">
+                <i class="fas fa-shopping-cart"></i><span id="a_count"></span></a>
+            <a id="memNickname" href="member.html">&nbsp;</a>
+            <!-- 會員暱稱 -->
+            <a id="spanLogin" class="navItem_2">登入</a>
+        </div>
+    </nav>
+    <nav class="rwdHeader">
+        <div class="rwdHeaderWrap">
+            <a href="home.html">
+                <img id="topLogo2" src="./images/Logo.svg">
+            </a>
+            <button class="hamburger hamburger--elastic" id="hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="rwdHamburgerMenu">
+        <nav>
+            <ul>
+                <a href="member.html">
+                    <li id="mobilememNickname">&nbsp;</li>
+                </a>
+                <a id="mobileloginLink">
+                    <li id="mobilespanLogin">登入 <i class="fas fa-user-circle"></i></li>
+                </a>
+                <a id="shopCart" href="prod_shopping.html">
+                    
+                    <li>購物車<i class="fas fa-shopping-cart"></i><span id="b_count"></span></li>
+                </a>
+                <a href="about.html">
+                    <li>果甘物語 <i class="fas fa-seedling"></i></li>
+                </a>
+                <a href="prod_product.html">
+                    <li>特色果甘 <i class="fas fa-apple-alt"></i></li>
+                </a>
+                <a href="box.html">
+                    <li>客製禮盒 <i class="fas fa-gift"></i></li>
+                </a>
+                <a href="cusfruits.html">
+                    <li>客製果甘 <i class="fas fa-lemon"></i></li>
+                </a>
+                <!-- <a href="#">
+                    <li>折扣遊戲 <i class="fas fa-carrot"></i></li>
+                </a> -->
+                <a href="forum.php">
+                    <li>果甘話區 <i class="fas fa-leaf"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <div class="wrapper_post">
+        <div class="post_container">
+            <div class="post_area">
+                <div class="cancel_post">
+                    <button class="cancel_post_btn" onclick="location.href='forum.php'">取消發表</button>
+                </div>
+                <form action="./php/addPost.php" method="POST" name="post_form" class="post_form" id="post_form">
+                    <div class="set_post_title">
+                        <label for="post_title">標題</label>
+                        <input type="text" name="artTitle" id="post_title" autofocus>
+                    </div>
+
+                    <p>選擇話題種類 (請選擇1項)</p>
+                    <div class="options_set set_post_topic"> 
+                        <div class="option">
+                            <input type="radio" id="digestion" name="topicType" value="1">
+                            <label for="digestion">幫助消化</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="cvd" name="topicType" value="2">
+                            <label for="cvd">保護血管</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="brain" name="topicType" value="3">
+                            <label for="brain">活化大腦</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="other" name="topicType" value="4">
+                            <label for="other">其它</label>
+                        </div>
+                    </div>
+
+                    <p>選擇果甘種類 (最多選擇6項)</p>
+                    <div class="options_set set_post_fruit">
+                        <div class="option">
+                            <input type="checkbox" id="star" name="fruitsItems[]" value="1">
+                            <label for="star">楊桃</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="pineapple" name="fruitsItems[]" value="2">
+                            <label for="pineapple">鳳梨</label>
+                        </div>                           
+                        <div class="option">
+                            <input type="checkbox" id="dragon" name="fruitsItems[]" value="3">
+                            <label for="dragon">火龍果</label>
+                        </div>
+                        <div class="option">                                    
+                            <input type="checkbox" id="banana" name="fruitsItems[]" value="4">
+                            <label for="banana">香蕉</label>
+                        </div>
+                        <div class="option">                                   
+                            <input type="checkbox" id="strawberry" name="fruitsItems[]" value="5">
+                            <label for="strawberry">草莓</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="guava" name="fruitsItems[]" value="6">
+                            <label for="guava">芭樂</label>
+                        </div>
+                        <div class="option">                                   
+                            <input type="checkbox" id="mango" name="fruitsItems[]" value="7">
+                            <label for="mango">芒果</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="appale" name="fruitsItems[]" value="8">
+                            <label for="appale">蘋果</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="blueberry" name="fruitsItems[]" value="9">
+                            <label for="blueberry">藍莓</label>
+                        </div>
+                    </div>
+                    <textarea id="summernote" name="editordata"></textarea>
+                    <div class="post_btns">
+                        <button type="submit" class="post_submit_btn" id="post_submit_btn">發表話題</button>
+                        <button type="reset" class="post_reset_btn">清除重填</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- alert start -->
+        <div id="alertBox" class="alertBox hidden">
+            <span id="close_alert_btn">&times;</span>
+            <span id="alertMessage"></span>
+          </div>
+        <!-- alert end -->
+    </div>
+    <footer>
+    <div class="footer_content">
+        <strong>地址：320 桃園市中壢區中大路300號<br></strong>
+        <strong>電話：03-4257387<br></strong>
+        <strong>信箱：DD105G3@gmail.com<br></strong>
+        <strong>Copyright &copy; 2020 Natural Sweet</srong>
+            <i class="fas fa-leaf"></i>
+    </div>
+</footer>
+    <!-- <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script> -->
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/vendor/all.js"></script>
+    <script src="./js/vendor/summernote-lite.min.js"></script>
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/login_common.js"></script>
+    <script src="./js/forum/forum_post.js"></script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心</title>
+    <link rel="stylesheet" href="./css/page/member/member.css">
+    <script src="./js/all.js"></script>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/tab.js"></script>
+    <script src="./js/order.js"></script>
+</head>
+<body>
+<!-- 會員中心 member.html---------------------------------------------------- -->
+<!-- header------------------------------------ -->
+    <script src="./js/hamburger.js"></script>
+<script src="./js/login_common.js"></script>
+<header>
+    <nav class="header__container">
+        <span class="logo">
+            <a href="home.html"><img src="./images/Logo.svg"></a>
+        </span>
+        <div class="navList">
+            <a class="navItem @@focus01" href="about.html">果甘物語 <i class="fas fa-seedling"></i></a>
+            <a class="navItem @@focus02" href="prod_product.html">特色果甘 <i class="fas fa-apple-alt"></i></a>
+            <a class="navItem @@focus03" href="box.html">客製禮盒 <i class="fas fa-gift"></i></a>
+            <a class="navItem @@focus04" href="cusfruits.html">客製果甘 <i class="fas fa-lemon"></i></a>
+            <!-- <a class="navItem @@focus05" href="#">折扣遊戲 <i class="fas fa-carrot"></i></a> -->
+            <a class="navItem @@focus06" href="forum.php">果甘話區 <i class="fas fa-leaf"></i></a>
+        </div>
+        <div class="navList_2">
+            <input id="memNo" type="hidden" value="">
+            <a id="shopCart" class="navItem_2" href="prod_shopping.html">
+                <i class="fas fa-shopping-cart"></i><span id="a_count"></span></a>
+            <a id="memNickname" href="member2.html">&nbsp;</a>
+            <!-- 會員暱稱 -->
+            <a id="spanLogin" class="navItem_2">登入</a>
+        </div>
+    </nav>
+    <nav class="rwdHeader">
+        <div class="rwdHeaderWrap">
+            <a href="home.html">
+                <img id="topLogo2" src="./images/Logo.svg">
+            </a>
+            <button class="hamburger hamburger--elastic" id="hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="rwdHamburgerMenu">
+        <nav>
+            <ul>
+                <a href="member2.html">
+                    <li id="mobilememNickname">&nbsp;</li>
+                </a>
+                <a id="mobileloginLink">
+                    <li id="mobilespanLogin">登入 <i class="fas fa-user-circle"></i></li>
+                </a>
+                <a id="shopCart" href="prod_shopping.html">
+                    
+                    <li>購物車<i class="fas fa-shopping-cart"></i><span id="b_count"></span></li>
+                </a>
+                <a href="about.html">
+                    <li>果甘物語 <i class="fas fa-seedling"></i></li>
+                </a>
+                <a href="prod_product.html">
+                    <li>特色果甘 <i class="fas fa-apple-alt"></i></li>
+                </a>
+                <a href="box.html">
+                    <li>客製禮盒 <i class="fas fa-gift"></i></li>
+                </a>
+                <a href="cusfruits.html">
+                    <li>客製果甘 <i class="fas fa-lemon"></i></li>
+                </a>
+                <!-- <a href="#">
+                    <li>折扣遊戲 <i class="fas fa-carrot"></i></li>
+                </a> -->
+                <a href="forum.php">
+                    <li>果甘話區 <i class="fas fa-leaf"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!-- 會員中心內容------------------------------------ -->
+<div class="wrap">
+    <!-- 大標題------------------------------------ -->
+    <section>
+        <h2 class="title_member">
+            <img src="./images/leaf.svg"  class="leafLeft">
+            <img src="./images/leaf.svg"  class="leafRight">
+            會員中心
+        </h2>
+    </section>
+    <!-- 會員資料------------------------------------ -->
+    <section>
+        <div class="contain">
+            <div class="member_info">
+                <div class="member_info_left">
+                    <div class="photo"></div>
+                    <input type="file" class="memPhoto_btn" id="memPhoto_btn">
+                </div>
+                <div class="member_info_right">
+                    <div>會員基本資料</div>
+                    <form action="" method="POST">
+                        <p><label for="">帳號：</label>
+                           <input class="member_input" type="text" value="123"></p>
+                        <br>
+                        <p><label for="">姓名：</label>
+                            <input class="member_input" type="text" value="Chen">
+                            <span class="icon">修改</span></p>
+                        <br>
+                        <p><label for="">密碼：</label>
+                            <input class="member_input" type="password" value="123">
+                            <span class="icon">修改</span></p>
+                        <br>
+                        <p><label for="">信箱：</label>
+                            <input class="member_input" type="email" value="123@gmail.com">
+                            <span class="icon">修改</span></p>
+                        <br>
+                        <p><label for="">電話：</label>
+                            <input class="member_input" type="number" value="0912345678">
+                            <span class="icon">修改</span></p>
+                        <br>
+                        <p><input type='submit' value='確定修改'></p>
+                    </form>
+
+                    <div>會員點數</div>
+                        <p class="member_point"><label for="">可用點數：200點</label>
+                        <a href="#">立即使用點數</a></p>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 會員訂單與我的收藏------------------------------------ -->
+    <section>
+        <div class="contain">
+            <div class="tab_wrap">
+                <ul class="tabs">
+                    <li><a href="#tab1">訂單管理</a></li>
+                    <li><a href="#tab2">我的收藏</a></li>
+                </ul>
+            
+                <div class="tab_container">
+                    <div id="tab1" class="tab_content">
+                        <h5>我的訂單</h5>
+                        <br>
+                        <script defer src="../../js/order.js"></script>
+<script src="../../js/jquery-3.4.1.js"></script>
+
+
+
+<!----------------------- 訂單管理---------------------------->
+<div class="tabPanel " id="tab-2">
+    <div class="order">
+        <!-- -------------------------訂單-------------------->
+        <div class="orderList">
+            <table>
+                <tr>
+                    <th>訂單編號 :</th>
+                    <td>93</td>
+                </tr>
+                <tr>
+                    <th>下單日期 :</th>
+                    <td>2020-02-07</td>
+                </tr>
+                <tr>
+                    <th>付款方式 :</th>
+                    <td>信用卡</td>
+                </tr>
+                <tr>
+                    <th>出貨狀態 :</th>
+                    <td>已送達</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>收件人地址 :</th>
+                    <td>桃園市中壢區中大路300號</td>
+                </tr>
+                <tr>
+                    <th>收件人電話 :</th>
+                    <td>0912345678</td>
+                </tr>
+            </table>
+        </div>
+        <div class="total">
+            <p>總額 : 1330</p>
+        </div>
+        <!-----------------訂單明細------------------------  -->
+        <div class="orderitem">
+            <p class="orderList_btn">訂單明細 v</p>
+            <div class=line></div>
+
+            <!-- ------------------------手機版html-------------------------------------- -->
+            <div class="orderLis_content">
+                <ul class="orderList_items_title">
+                    <li>商品</li>
+                    <li>品名</li>
+                    <li>數量</li>
+                    <li>單價</li>
+                    <li>小計</li>
+                    <li>備註</li>
+                    <li>評價狀態</li>
+                </ul>
+                <ul class="orderList_moreItems">
+                    <li>
+                        <img src="./Jeff_images/order1.png " alt="鳳梨甘圖" width="100px">
+
+                    </li>
+                    <li>
+                        鳳梨甘</li>
+                    <li>
+                        7 </li>
+                    <li>
+                        80 </li>
+                    <li>
+                        560 </li>
+                    <li>
+                        一般 </li>
+                    <li>
+                        <button class="orderList_eva_done cart" type="button">已評價</button> </li>
+
+
+                </ul>
+
+                <ul class="orderList_moreItems">
+                    <li>
+                        <img src="./Jeff_images/order2.png " alt="鳳梨甘圖" width="100px">
+
+                    </li>
+                    <li>
+                        客製果甘</li>
+                    <li>
+                        7 </li>
+                    <li>
+                        80 </li>
+                    <li>
+                        560 </li>
+                    <li>
+                        客製 </li>
+                    <li>
+                        <button class="orderList_eva_done cart" type="button">已評價</button> </li>
+
+
+                </ul>
+
+                <ul class="orderList_moreItems">
+                    <li>
+                        <img src="./Jeff_images/order3.png " alt="鳳梨甘圖" width="100px">
+
+                    </li>
+                    <li>
+                        果甘禮盒</li>
+                    <li>
+                        1</li>
+                    <li>
+                        150</li>
+                    <li>
+                        150</li>
+                    <li>
+                        一般</li>
+                    <li>
+                        <button class="orderList_eva cart" type="button">未評價</button> </li>
+
+
+                </ul>
+
+                <!----------------------------------評價燈箱-------------------------  -->
+                <div class="eva_lightBox" name="snackNo4">
+                    <span class="eva_lightBox_leave"><i class="fas fa-times"></i></span>
+                    <div class="eva_Boxing">
+                        <div class="evaContent boxing">
+                            <img src="./Jeff_images/order3.png " alt="商品圖" width="100px">
+                            <p>果乾禮盒</p>
+                        </div>
+                        <div class="eva_lightBox_Starts boxing">
+                            <ul>
+
+                                <li>
+                                    <p>
+                                        好評度：
+                                        <ul class="eva_lightBox_gdStars">
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="gdStar" value="1">
+                                                    <span>1星</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="gdStar" value="2">
+                                                    <span>2星</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="gdStar" value="3">
+                                                    <span>3星</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="gdStar" value="4">
+                                                    <span>4星</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" name="gdStar" value="5" checked>
+                                                    <span>5星</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="eva_lightBox_msg boxing">
+                            <p>評價分享</p>
+                            <textarea name="textDiscuss" cols="24" rows="10" class="eva_lightBox_textDics"></textarea>
+                        </div>
+                    </div>
+                    <div class="eva_lightBox_send evaSend">
+                        <input type='submit' id="4" class="step sendEva" value="送出評價">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div id="tab2" class="tab_content">
+                        <h5>我的收藏</h5>
+                        <br>
+                        <p>您尚未收藏任何文章~</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- footer------------------------------------ -->
+    <footer>
+    <div class="footer_content">
+        <strong>地址：320 桃園市中壢區中大路300號<br></strong>
+        <strong>電話：03-4257387<br></strong>
+        <strong>信箱：DD105G3@gmail.com<br></strong>
+        <strong>Copyright &copy; 2020 Natural Sweet</srong>
+            <i class="fas fa-leaf"></i>
+    </div>
+</footer>
+
+</body>
+</html>
